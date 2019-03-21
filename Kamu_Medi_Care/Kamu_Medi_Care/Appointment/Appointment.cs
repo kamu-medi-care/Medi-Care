@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kamu_Medi_Care.Appointment
 {
-    public partial class Reception : Form
+    public partial class Appointment : Form
     {
-        public Reception()
+        public Appointment()
         {
             InitializeComponent();
         }
