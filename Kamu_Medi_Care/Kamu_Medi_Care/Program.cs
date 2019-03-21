@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Kamu_Medi_Care.Receptions;
+using System;
 using System.Windows.Forms;
 
 namespace Kamu_Medi_Care
@@ -16,7 +14,7 @@ namespace Kamu_Medi_Care
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Reception());
         }
     }
 }

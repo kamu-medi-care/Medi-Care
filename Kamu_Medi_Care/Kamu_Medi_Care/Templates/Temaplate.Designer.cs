@@ -1,6 +1,6 @@
-﻿namespace Kamu_Medi_Care
+﻿namespace Kamu_Medi_Care.Templates
 {
-    partial class Form1
+    partial class Temaplate
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Temaplate
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "Temaplate";
+            this.Text = "Temaplate";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
     }
 }
-

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kamu_Medi_Care
+namespace Kamu_Medi_Care.Templates
 {
-    public partial class Form1 : Form
+    public partial class Temaplate : Form
     {
-        public Form1()
+        public Temaplate()
         {
             InitializeComponent();
         }

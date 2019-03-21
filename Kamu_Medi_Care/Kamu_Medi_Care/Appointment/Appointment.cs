@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Kamu_Medi_Care.Templates;
 
 namespace Kamu_Medi_Care.Appointment
 {
-    public partial class Appointment : Form
+    public partial class Appointment : Temaplate
     {
         public Appointment()
         {
