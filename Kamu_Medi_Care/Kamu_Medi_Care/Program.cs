@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Kamu_Medi_Care.Appointment;
+using Kamu_Medi_Care.Medicines;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +18,7 @@ namespace Kamu_Medi_Care
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Medicine());
         }
     }
 }
