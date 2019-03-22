@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appointment\Reception.cs">
+    <Compile Include="Appointment\Appointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Appointment\Reception.Designer.cs">
-      <DependentUpon>Reception.cs</DependentUpon>
+    <Compile Include="Appointment\Appointment.Designer.cs">
+      <DependentUpon>Appointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Medicines\Medicine.cs">
       <SubType>Form</SubType>
@@ -60,8 +60,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Medicines\Medicine.resx">
-      <DependentUpon>Medicine.cs</DependentUpon>
+    <Compile Include="Receptions\Reception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receptions\Reception.Designer.cs">
+      <DependentUpon>Reception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Temaplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Temaplate.Designer.cs">
+      <DependentUpon>Temaplate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Appointment\Appointment.resx">
+      <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -72,6 +84,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Receptions\Reception.resx">
+      <DependentUpon>Reception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Temaplate.resx">
+      <DependentUpon>Temaplate.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
