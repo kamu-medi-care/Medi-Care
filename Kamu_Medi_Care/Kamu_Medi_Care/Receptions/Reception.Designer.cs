@@ -59,6 +59,8 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmbDrName = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,9 +75,9 @@
             this.toolStripSeparator5,
             this.BtnMedicine,
             this.toolStripSeparator2,
-            this.toolStripButton3,
-            this.toolStripSeparator3,
             this.toolStripButton4,
+            this.toolStripSeparator3,
+            this.toolStripButton3,
             this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -176,6 +178,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cmbDrName);
             this.panel1.Controls.Add(this.cmbGender);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.txtAddress);
@@ -191,6 +194,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtAge);
             this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(46, 121);
@@ -200,13 +204,18 @@
             // 
             // cmbGender
             // 
+            this.cmbGender.BackColor = System.Drawing.Color.White;
+            this.cmbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGender.ForeColor = System.Drawing.Color.Magenta;
             this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
             this.cmbGender.Location = new System.Drawing.Point(587, 124);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(239, 28);
-            this.cmbGender.TabIndex = 4;
+            this.cmbGender.TabIndex = 5;
             // 
             // button1
             // 
@@ -217,7 +226,7 @@
             this.button1.Location = new System.Drawing.Point(408, 277);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
-            this.button1.TabIndex = 8;
+            this.button1.TabIndex = 9;
             this.button1.Text = "Refer";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -229,28 +238,29 @@
             this.txtAddress.Location = new System.Drawing.Point(587, 172);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(239, 76);
-            this.txtAddress.TabIndex = 6;
+            this.txtAddress.TabIndex = 7;
             this.txtAddress.Text = "";
             // 
             // txtDate
             // 
+            this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.ForeColor = System.Drawing.Color.Magenta;
-            this.txtDate.Location = new System.Drawing.Point(587, 20);
+            this.txtDate.Location = new System.Drawing.Point(587, 29);
             this.txtDate.Name = "txtDate";
             this.txtDate.Size = new System.Drawing.Size(121, 27);
-            this.txtDate.TabIndex = 1;
+            this.txtDate.TabIndex = 111;
             this.txtDate.Text = "date";
-            this.txtDate.Visible = false;
             // 
             // txtId
             // 
+            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.ForeColor = System.Drawing.Color.Magenta;
-            this.txtId.Location = new System.Drawing.Point(740, 20);
+            this.txtId.Location = new System.Drawing.Point(740, 29);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(86, 27);
-            this.txtId.TabIndex = 1;
+            this.txtId.TabIndex = 112;
             this.txtId.Text = "Id";
             // 
             // txtFatherName
@@ -260,7 +270,7 @@
             this.txtFatherName.Location = new System.Drawing.Point(587, 75);
             this.txtFatherName.Name = "txtFatherName";
             this.txtFatherName.Size = new System.Drawing.Size(239, 27);
-            this.txtFatherName.TabIndex = 2;
+            this.txtFatherName.TabIndex = 3;
             // 
             // label7
             // 
@@ -302,7 +312,7 @@
             this.txtFee.Location = new System.Drawing.Point(166, 221);
             this.txtFee.Name = "txtFee";
             this.txtFee.Size = new System.Drawing.Size(239, 27);
-            this.txtFee.TabIndex = 7;
+            this.txtFee.TabIndex = 8;
             // 
             // label8
             // 
@@ -322,7 +332,7 @@
             this.txtPhoneNo.Location = new System.Drawing.Point(166, 172);
             this.txtPhoneNo.Name = "txtPhoneNo";
             this.txtPhoneNo.Size = new System.Drawing.Size(239, 27);
-            this.txtPhoneNo.TabIndex = 5;
+            this.txtPhoneNo.TabIndex = 6;
             // 
             // label6
             // 
@@ -342,7 +352,7 @@
             this.txtAge.Location = new System.Drawing.Point(166, 124);
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(239, 27);
-            this.txtAge.TabIndex = 3;
+            this.txtAge.TabIndex = 4;
             // 
             // label4
             // 
@@ -362,7 +372,7 @@
             this.txtName.Location = new System.Drawing.Point(166, 77);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(239, 27);
-            this.txtName.TabIndex = 1;
+            this.txtName.TabIndex = 2;
             // 
             // label2
             // 
@@ -385,6 +395,32 @@
             this.label1.Size = new System.Drawing.Size(119, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(50, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 22);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Dr Name";
+            // 
+            // cmbDrName
+            // 
+            this.cmbDrName.BackColor = System.Drawing.Color.White;
+            this.cmbDrName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDrName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbDrName.ForeColor = System.Drawing.Color.Magenta;
+            this.cmbDrName.FormattingEnabled = true;
+            this.cmbDrName.Items.AddRange(new object[] {
+            "Dr Male",
+            "Dr Female"});
+            this.cmbDrName.Location = new System.Drawing.Point(166, 31);
+            this.cmbDrName.Name = "cmbDrName";
+            this.cmbDrName.Size = new System.Drawing.Size(239, 28);
+            this.cmbDrName.TabIndex = 1;
             // 
             // Reception
             // 
@@ -438,5 +474,7 @@
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtDate;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbDrName;
     }
 }
