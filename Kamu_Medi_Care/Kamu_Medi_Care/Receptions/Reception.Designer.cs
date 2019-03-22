@@ -34,15 +34,18 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnAppointment = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.BtnMedicine = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
+            this.txtDate = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
             this.txtFatherName = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,9 +59,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbGender = new System.Windows.Forms.ComboBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtDate = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -71,7 +71,7 @@
             this.toolStripSeparator1,
             this.BtnAppointment,
             this.toolStripSeparator5,
-            this.toolStripButton2,
+            this.BtnMedicine,
             this.toolStripSeparator2,
             this.toolStripButton3,
             this.toolStripSeparator3,
@@ -118,16 +118,17 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(6, 44);
             // 
-            // toolStripButton2
+            // BtnMedicine
             // 
-            this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripButton2.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(84, 41);
-            this.toolStripButton2.Text = "Medicines";
-            this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnMedicine.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnMedicine.Image = ((System.Drawing.Image)(resources.GetObject("BtnMedicine.Image")));
+            this.BtnMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnMedicine.Name = "BtnMedicine";
+            this.BtnMedicine.Size = new System.Drawing.Size(84, 41);
+            this.BtnMedicine.Text = "Medicines";
+            this.BtnMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnMedicine.Click += new System.EventHandler(this.BtnMedicine_Click);
             // 
             // toolStripSeparator2
             // 
@@ -197,6 +198,16 @@
             this.panel1.Size = new System.Drawing.Size(877, 336);
             this.panel1.TabIndex = 6;
             // 
+            // cmbGender
+            // 
+            this.cmbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGender.ForeColor = System.Drawing.Color.Magenta;
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Location = new System.Drawing.Point(587, 124);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(239, 28);
+            this.cmbGender.TabIndex = 4;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
@@ -220,6 +231,27 @@
             this.txtAddress.Size = new System.Drawing.Size(239, 76);
             this.txtAddress.TabIndex = 6;
             this.txtAddress.Text = "";
+            // 
+            // txtDate
+            // 
+            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.ForeColor = System.Drawing.Color.Magenta;
+            this.txtDate.Location = new System.Drawing.Point(587, 20);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Size = new System.Drawing.Size(121, 27);
+            this.txtDate.TabIndex = 1;
+            this.txtDate.Text = "date";
+            this.txtDate.Visible = false;
+            // 
+            // txtId
+            // 
+            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.ForeColor = System.Drawing.Color.Magenta;
+            this.txtId.Location = new System.Drawing.Point(740, 20);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(86, 27);
+            this.txtId.TabIndex = 1;
+            this.txtId.Text = "Id";
             // 
             // txtFatherName
             // 
@@ -354,37 +386,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
             // 
-            // cmbGender
-            // 
-            this.cmbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbGender.ForeColor = System.Drawing.Color.Magenta;
-            this.cmbGender.FormattingEnabled = true;
-            this.cmbGender.Location = new System.Drawing.Point(587, 124);
-            this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(239, 28);
-            this.cmbGender.TabIndex = 4;
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.ForeColor = System.Drawing.Color.Magenta;
-            this.txtId.Location = new System.Drawing.Point(740, 20);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(86, 27);
-            this.txtId.TabIndex = 1;
-            this.txtId.Text = "Id";
-            // 
-            // txtDate
-            // 
-            this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDate.ForeColor = System.Drawing.Color.Magenta;
-            this.txtDate.Location = new System.Drawing.Point(587, 20);
-            this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(121, 27);
-            this.txtDate.TabIndex = 1;
-            this.txtDate.Text = "date";
-            this.txtDate.Visible = false;
-            // 
             // Reception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,7 +413,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton BtnAppointment;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton BtnMedicine;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;

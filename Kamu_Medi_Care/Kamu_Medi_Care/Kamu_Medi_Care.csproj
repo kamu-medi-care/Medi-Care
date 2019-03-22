@@ -66,14 +66,17 @@
     <Compile Include="Receptions\Reception.Designer.cs">
       <DependentUpon>Reception.cs</DependentUpon>
     </Compile>
-    <Compile Include="Templates\Temaplate.cs">
+    <Compile Include="Templates\Template.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Templates\Temaplate.Designer.cs">
-      <DependentUpon>Temaplate.cs</DependentUpon>
+    <Compile Include="Templates\Template.Designer.cs">
+      <DependentUpon>Template.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Appointment\Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicines\Medicine.resx">
+      <DependentUpon>Medicine.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,8 +90,8 @@
     <EmbeddedResource Include="Receptions\Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\Temaplate.resx">
-      <DependentUpon>Temaplate.cs</DependentUpon>
+    <EmbeddedResource Include="Templates\Template.resx">
+      <DependentUpon>Template.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

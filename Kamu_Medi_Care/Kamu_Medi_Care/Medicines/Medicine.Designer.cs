@@ -52,16 +52,19 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(551, 32);
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.Magenta;
+            this.btnAdd.Location = new System.Drawing.Point(450, 35);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(81, 27);
+            this.btnAdd.Size = new System.Drawing.Size(96, 36);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
             // dgvMedicine
             // 
+            this.dgvMedicine.BackgroundColor = System.Drawing.Color.White;
             this.dgvMedicine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMedicine.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MedicineColumn});
@@ -79,19 +82,22 @@
             // 
             // txtMedicineName
             // 
-            this.txtMedicineName.Location = new System.Drawing.Point(214, 32);
+            this.txtMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMedicineName.ForeColor = System.Drawing.Color.Magenta;
+            this.txtMedicineName.Location = new System.Drawing.Point(163, 40);
             this.txtMedicineName.Multiline = true;
             this.txtMedicineName.Name = "txtMedicineName";
-            this.txtMedicineName.Size = new System.Drawing.Size(244, 27);
+            this.txtMedicineName.Size = new System.Drawing.Size(237, 27);
             this.txtMedicineName.TabIndex = 1;
             // 
             // lblMedicineName
             // 
             this.lblMedicineName.AutoSize = true;
-            this.lblMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedicineName.Location = new System.Drawing.Point(37, 32);
+            this.lblMedicineName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedicineName.ForeColor = System.Drawing.Color.White;
+            this.lblMedicineName.Location = new System.Drawing.Point(62, 43);
             this.lblMedicineName.Name = "lblMedicineName";
-            this.lblMedicineName.Size = new System.Drawing.Size(90, 20);
+            this.lblMedicineName.Size = new System.Drawing.Size(86, 20);
             this.lblMedicineName.TabIndex = 0;
             this.lblMedicineName.Text = "Medicine :";
             // 

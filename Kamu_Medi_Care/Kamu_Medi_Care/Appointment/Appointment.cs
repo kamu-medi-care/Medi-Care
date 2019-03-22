@@ -2,7 +2,7 @@
 
 namespace Kamu_Medi_Care.Appointment
 {
-    public partial class Appointment : Temaplate
+    public partial class Appointment : Template
     {
         public Appointment()
         {
