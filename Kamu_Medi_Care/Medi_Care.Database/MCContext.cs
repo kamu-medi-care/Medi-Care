@@ -1,4 +1,5 @@
 ﻿using Kamu_Medi_Care.Models;
+using Medi_Care.Models;
 using System.Data.Entity;
 
 namespace Medi_Care.Database
@@ -10,5 +11,6 @@ namespace Medi_Care.Database
         }
 
         public DbSet<ReceptionModel> ReceptionModels { get; set; }
+        public DbSet<MedicineModel> MedicineModels { get; set; }
     }
 }

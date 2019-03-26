@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="AppointmentModel.cs" />
     <Compile Include="MCContext.cs" />
+    <Compile Include="MedicineModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceptionModel.cs" />
   </ItemGroup>

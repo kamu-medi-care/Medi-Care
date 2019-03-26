@@ -57,6 +57,10 @@
     <Compile Include="Migrations\201903261124378_ApplyAnnotationOnRepection.Designer.cs">
       <DependentUpon>201903261124378_ApplyAnnotationOnRepection.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903261146152_Medicine.cs" />
+    <Compile Include="Migrations\201903261146152_Medicine.Designer.cs">
+      <DependentUpon>201903261146152_Medicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -76,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903261124378_ApplyAnnotationOnRepection.resx">
       <DependentUpon>201903261124378_ApplyAnnotationOnRepection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903261146152_Medicine.resx">
+      <DependentUpon>201903261146152_Medicine.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
