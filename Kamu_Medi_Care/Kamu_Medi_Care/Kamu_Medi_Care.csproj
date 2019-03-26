@@ -115,6 +115,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Medi_Care.Models\Medi_Care.Models.csproj">
+      <Project>{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}</Project>
+      <Name>Medi_Care.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Medi_Care.Service\Medi_Care.Service.csproj">
       <Project>{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}</Project>
       <Name>Medi_Care.Service</Name>

@@ -1,4 +1,5 @@
 ﻿using Kamu_Medi_Care.Medicines;
+using Kamu_Medi_Care.Models;
 using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
 
@@ -27,7 +28,8 @@ namespace Kamu_Medi_Care.Receptions
 
         private void BtnRefer_Click(object sender, System.EventArgs e)
         {
-            Reception reception = new Reception();
+            ReceptionModel reception = new ReceptionModel();
+            reception.DrName = cmbDrName.Text;
             //reception.cmbDrName = cmbDrName.Text;
             //receptionService.ReferPatient();
         }
