@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kamu_Medi_Care", "Kamu_Medi_Care\Kamu_Medi_Care.csproj", "{4BEAF855-3749-4FE5-98CF-B3EB682DE3DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medi_Care.Models", "Medi_Care.Models\Medi_Care.Models.csproj", "{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medi_Care.Database", "Medi_Care.Database\Medi_Care.Database.csproj", "{9D43E3CB-A5F5-4084-85CD-4ADC77EFEE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medi_Care.Service", "Medi_Care.Service\Medi_Care.Service.csproj", "{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{4BEAF855-3749-4FE5-98CF-B3EB682DE3DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BEAF855-3749-4FE5-98CF-B3EB682DE3DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BEAF855-3749-4FE5-98CF-B3EB682DE3DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E1A751-F2A6-40E1-AFEC-C9B3F211EA09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D43E3CB-A5F5-4084-85CD-4ADC77EFEE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D43E3CB-A5F5-4084-85CD-4ADC77EFEE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D43E3CB-A5F5-4084-85CD-4ADC77EFEE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D43E3CB-A5F5-4084-85CD-4ADC77EFEE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
