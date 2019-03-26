@@ -41,9 +41,13 @@
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtBloodPresure = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtTemperature = new System.Windows.Forms.TextBox();
             this.cmbDrName = new System.Windows.Forms.ComboBox();
             this.cmbGender = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnRefer = new System.Windows.Forms.Button();
             this.txtAddress = new System.Windows.Forms.RichTextBox();
             this.txtDate = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
@@ -61,10 +65,6 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -182,13 +182,13 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtBloodPresure);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTemperature);
             this.panel1.Controls.Add(this.cmbDrName);
             this.panel1.Controls.Add(this.cmbGender);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.BtnRefer);
             this.panel1.Controls.Add(this.txtAddress);
             this.panel1.Controls.Add(this.txtDate);
             this.panel1.Controls.Add(this.txtId);
@@ -209,6 +209,46 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(877, 393);
             this.panel1.TabIndex = 6;
+            // 
+            // txtBloodPresure
+            // 
+            this.txtBloodPresure.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBloodPresure.ForeColor = System.Drawing.Color.Magenta;
+            this.txtBloodPresure.Location = new System.Drawing.Point(587, 269);
+            this.txtBloodPresure.Name = "txtBloodPresure";
+            this.txtBloodPresure.Size = new System.Drawing.Size(239, 27);
+            this.txtBloodPresure.TabIndex = 116;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(471, 272);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 22);
+            this.label10.TabIndex = 113;
+            this.label10.Text = "Blood_P";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(50, 272);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(118, 22);
+            this.label11.TabIndex = 114;
+            this.label11.Text = "Temperature ";
+            // 
+            // txtTemperature
+            // 
+            this.txtTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTemperature.ForeColor = System.Drawing.Color.Magenta;
+            this.txtTemperature.Location = new System.Drawing.Point(166, 269);
+            this.txtTemperature.Name = "txtTemperature";
+            this.txtTemperature.Size = new System.Drawing.Size(239, 27);
+            this.txtTemperature.TabIndex = 115;
             // 
             // cmbDrName
             // 
@@ -240,18 +280,19 @@
             this.cmbGender.Size = new System.Drawing.Size(239, 28);
             this.cmbGender.TabIndex = 5;
             // 
-            // button1
+            // BtnRefer
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Magenta;
-            this.button1.Location = new System.Drawing.Point(408, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 36);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Refer";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnRefer.BackColor = System.Drawing.Color.White;
+            this.BtnRefer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRefer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRefer.ForeColor = System.Drawing.Color.Magenta;
+            this.BtnRefer.Location = new System.Drawing.Point(408, 325);
+            this.BtnRefer.Name = "BtnRefer";
+            this.BtnRefer.Size = new System.Drawing.Size(96, 36);
+            this.BtnRefer.TabIndex = 9;
+            this.BtnRefer.Text = "Refer";
+            this.BtnRefer.UseVisualStyleBackColor = false;
+            this.BtnRefer.Click += new System.EventHandler(this.BtnRefer_Click);
             // 
             // txtAddress
             // 
@@ -266,7 +307,6 @@
             // 
             // txtDate
             // 
-            this.txtDate.Enabled = false;
             this.txtDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDate.ForeColor = System.Drawing.Color.Magenta;
             this.txtDate.Location = new System.Drawing.Point(587, 29);
@@ -277,7 +317,6 @@
             // 
             // txtId
             // 
-            this.txtId.Enabled = false;
             this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtId.ForeColor = System.Drawing.Color.Magenta;
             this.txtId.Location = new System.Drawing.Point(740, 29);
@@ -430,46 +469,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
             // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Magenta;
-            this.textBox2.Location = new System.Drawing.Point(587, 269);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(239, 27);
-            this.textBox2.TabIndex = 116;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(471, 272);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 22);
-            this.label10.TabIndex = 113;
-            this.label10.Text = "Blood_P";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(50, 272);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 22);
-            this.label11.TabIndex = 114;
-            this.label11.Text = "Temperature ";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Magenta;
-            this.textBox1.Location = new System.Drawing.Point(166, 269);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 27);
-            this.textBox1.TabIndex = 115;
-            // 
             // Reception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -518,15 +517,15 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.RichTextBox txtAddress;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnRefer;
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.TextBox txtDate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cmbDrName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBloodPresure;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTemperature;
     }
 }

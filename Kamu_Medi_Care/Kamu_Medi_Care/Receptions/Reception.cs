@@ -1,5 +1,6 @@
 ﻿using Kamu_Medi_Care.Medicines;
 using Kamu_Medi_Care.Templates;
+using Medi_Care.Service;
 
 namespace Kamu_Medi_Care.Receptions
 {
@@ -9,6 +10,8 @@ namespace Kamu_Medi_Care.Receptions
         {
             InitializeComponent();
         }
+
+        ReceptionService receptionService=new ReceptionService();
 
         private void BtnAppointment_Click(object sender, System.EventArgs e)
         {
@@ -20,6 +23,13 @@ namespace Kamu_Medi_Care.Receptions
         {
             Medicine medicines = new Medicine();
             medicines.Show();
+        }
+
+        private void BtnRefer_Click(object sender, System.EventArgs e)
+        {
+            Reception reception = new Reception();
+            //reception.cmbDrName = cmbDrName.Text;
+            //receptionService.ReferPatient();
         }
     }
 }

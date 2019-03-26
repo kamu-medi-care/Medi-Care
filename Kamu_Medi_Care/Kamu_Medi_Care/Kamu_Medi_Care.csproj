@@ -114,5 +114,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Medi_Care.Service\Medi_Care.Service.csproj">
+      <Project>{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}</Project>
+      <Name>Medi_Care.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
