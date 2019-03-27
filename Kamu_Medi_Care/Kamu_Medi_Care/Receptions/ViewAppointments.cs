@@ -19,7 +19,7 @@ namespace Kamu_Medi_Care.Appointment
 
         public void LoadReceptions()
         {
-            receptionService.GetReception();
+            dgvReception.DataSource=receptionService.GetReception();
         }
     }
 }
