@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reception));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.BtnViewReception = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnAppointment = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -73,7 +73,7 @@
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.White;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton5,
+            this.BtnViewReception,
             this.toolStripSeparator1,
             this.BtnAppointment,
             this.toolStripSeparator5,
@@ -89,16 +89,17 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton5
+            // BtnViewReception
             // 
-            this.toolStripButton5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripButton5.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(83, 41);
-            this.toolStripButton5.Text = "Reception";
-            this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnViewReception.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnViewReception.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnViewReception.Image = ((System.Drawing.Image)(resources.GetObject("BtnViewReception.Image")));
+            this.BtnViewReception.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnViewReception.Name = "BtnViewReception";
+            this.BtnViewReception.Size = new System.Drawing.Size(121, 41);
+            this.BtnViewReception.Text = "View Reception";
+            this.BtnViewReception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnViewReception.Click += new System.EventHandler(this.BtnViewReception_Click);
             // 
             // toolStripSeparator1
             // 
@@ -492,7 +493,7 @@
         #endregion
 
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton BtnViewReception;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripButton BtnAppointment;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;

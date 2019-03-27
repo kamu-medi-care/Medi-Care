@@ -10,30 +10,33 @@ namespace Kamu_Medi_Care.Medicines
         {
             InitializeComponent();
         }
-
-
-
+        
         MedicineService medicineService = new MedicineService();
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
-
             var medicineModel = new MedicineModel {
 
                 MedicineName = txtMedicineName.Text
 
-
-                   };
+            };
             
             medicineService.AddMedicine(medicineModel);
 
             txtMedicineName.Clear();
-            
+            LoadMedicine();
+
         }
 
         private void Medicine_Load(object sender, System.EventArgs e)
         {
-            dgvMedicine.DataSource=(medicineService.MedicineTable());
+            LoadMedicine();
+        }
+
+        public void LoadMedicine()
+        {
+            var data = medicineService.MedicineTable();
+            dgvMedicine.DataSource = data;
         }
     }
 }

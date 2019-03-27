@@ -1,4 +1,5 @@
-﻿using Kamu_Medi_Care.Medicines;
+﻿using Kamu_Medi_Care.Appointment;
+using Kamu_Medi_Care.Medicines;
 using Kamu_Medi_Care.Models;
 using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
@@ -63,6 +64,10 @@ namespace Kamu_Medi_Care.Receptions
             txtBloodPresure.Clear();
         }
 
-
+        private void BtnViewReception_Click(object sender, EventArgs e)
+        {
+            ViewAppointments viewAppointments = new ViewAppointments();
+            viewAppointments.Show();
+        }
     }
 }

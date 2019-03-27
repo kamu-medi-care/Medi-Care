@@ -31,7 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dgvMedicine = new System.Windows.Forms.DataGridView();
-            this.MedicineColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtMedicineName = new System.Windows.Forms.TextBox();
             this.lblMedicineName = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -65,21 +64,14 @@
             // 
             // dgvMedicine
             // 
+            this.dgvMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMedicine.BackgroundColor = System.Drawing.Color.White;
             this.dgvMedicine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMedicine.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MedicineColumn});
             this.dgvMedicine.Location = new System.Drawing.Point(163, 110);
             this.dgvMedicine.Name = "dgvMedicine";
+            this.dgvMedicine.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMedicine.Size = new System.Drawing.Size(383, 150);
             this.dgvMedicine.TabIndex = 2;
-            // 
-            // MedicineColumn
-            // 
-            this.MedicineColumn.HeaderText = "Medicines";
-            this.MedicineColumn.Name = "MedicineColumn";
-            this.MedicineColumn.ReadOnly = true;
-            this.MedicineColumn.Width = 340;
             // 
             // txtMedicineName
             // 
@@ -140,7 +132,6 @@
         private System.Windows.Forms.Label lblMedicineName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridView dgvMedicine;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MedicineColumn;
         private System.Windows.Forms.Label lblTitle;
     }
 }

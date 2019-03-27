@@ -1,5 +1,7 @@
 ﻿using Kamu_Medi_Care.Models;
 using Medi_Care.Database;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Medi_Care.Service
 {
@@ -12,6 +14,15 @@ namespace Medi_Care.Service
                context.ReceptionModels.Add(receptionModels);
                context.SaveChanges();
            };
+        }
+
+        public List<ReceptionModel> GetReception()
+        {
+            using (var context = new MCContext())
+            {
+                var data= context.ReceptionModels.ToList();
+                return data;
+            };
         }
     }
 }
