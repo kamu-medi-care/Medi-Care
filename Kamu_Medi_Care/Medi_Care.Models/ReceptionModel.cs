@@ -17,9 +17,6 @@ namespace Kamu_Medi_Care.Models
         public string Temperature { get; set; }
         public string BloodPresure { get; set; }
 
-        public static implicit operator ReceptionModel(Kamu_Medi_Care.Receptions.Reception v)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

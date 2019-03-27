@@ -28,10 +28,6 @@ namespace Kamu_Medi_Care.Receptions
 
         private void BtnRefer_Click(object sender, System.EventArgs e)
         {
-            ReceptionModel reception = new ReceptionModel();
-            reception.DrName = cmbDrName.Text;
-            //reception.cmbDrName = cmbDrName.Text;
-            //receptionService.ReferPatient();
         }
     }
 }
