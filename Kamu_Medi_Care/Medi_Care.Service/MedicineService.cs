@@ -1,5 +1,7 @@
 ﻿using Medi_Care.Database;
 using Medi_Care.Models;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Medi_Care.Service
 {
@@ -13,6 +15,15 @@ namespace Medi_Care.Service
 
                 context.SaveChanges();
             };
+        }
+
+        public List<MedicineModel> MedicineTable()
+        {
+            using (var context = new MCContext())
+            {
+                var medicine=context.MedicineModels.ToList();
+                return medicine;
+            }
         }
     }
 }

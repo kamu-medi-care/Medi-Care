@@ -11,6 +11,10 @@ namespace Kamu_Medi_Care.Medicines
             InitializeComponent();
         }
 
+
+
+        MedicineService medicineService = new MedicineService();
+
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
 
@@ -21,12 +25,15 @@ namespace Kamu_Medi_Care.Medicines
 
                    };
             
-
-            MedicineService medicineService = new MedicineService();
             medicineService.AddMedicine(medicineModel);
 
             txtMedicineName.Clear();
             
+        }
+
+        private void Medicine_Load(object sender, System.EventArgs e)
+        {
+            dgvMedicine.DataSource=(medicineService.MedicineTable());
         }
     }
 }

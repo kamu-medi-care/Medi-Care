@@ -124,6 +124,7 @@
             this.Name = "Medicine";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medicine";
+            this.Load += new System.EventHandler(this.Medicine_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedicine)).EndInit();
