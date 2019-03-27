@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201903261146152_Medicine.Designer.cs">
       <DependentUpon>201903261146152_Medicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903270857462_ApplyAnnotationOnGender.cs" />
+    <Compile Include="Migrations\201903270857462_ApplyAnnotationOnGender.Designer.cs">
+      <DependentUpon>201903270857462_ApplyAnnotationOnGender.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +87,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903261146152_Medicine.resx">
       <DependentUpon>201903261146152_Medicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903270857462_ApplyAnnotationOnGender.resx">
+      <DependentUpon>201903270857462_ApplyAnnotationOnGender.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
