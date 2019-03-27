@@ -17,7 +17,6 @@ namespace Kamu_Medi_Care.LogIn
 
         private void btnSignIn_Click(object sender, System.EventArgs e)
         {
-            this.Hide();
             Reception reception=new Reception();
             reception.Show();
         }
