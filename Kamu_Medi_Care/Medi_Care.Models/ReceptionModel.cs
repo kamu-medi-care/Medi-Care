@@ -17,5 +17,6 @@ namespace Kamu_Medi_Care.Models
         public string Temperature { get; set; }
         public string BloodPresure { get; set; }
 
+      
     }
 }
