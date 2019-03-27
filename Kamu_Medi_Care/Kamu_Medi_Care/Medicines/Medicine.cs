@@ -13,9 +13,14 @@ namespace Kamu_Medi_Care.Medicines
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
+
+            var medicineModel = new MedicineModel {
+
+                MedicineName = txtMedicineName.Text
+
+
+                   };
             
-            MedicineModel medicineModel = new MedicineModel();
-            medicineModel.MedicineName = txtMedicineName.Text;
 
             MedicineService medicineService = new MedicineService();
             medicineService.AddMedicine(medicineModel);
