@@ -33,11 +33,13 @@ namespace Kamu_Medi_Care.LogIn
                 Name = txtUserName.Text,
                 Password = txtPassword.Text
             };
+
             var exist=signInService.GetUser(signIn);
 
             if (exist)
             {
                 Reception reception = new Reception();
+                reception.SignedInUser(signIn.Name);
                 reception.Show();
                 this.Hide();
 
@@ -58,6 +60,7 @@ namespace Kamu_Medi_Care.LogIn
                 message.message(msge,title,buttons,icon);
                 RefreshForm();
             }
+
         }
 
         private void RefreshForm()

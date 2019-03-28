@@ -69,5 +69,15 @@ namespace Kamu_Medi_Care.Receptions
             ViewAppointments viewAppointments = new ViewAppointments();
             viewAppointments.Show();
         }
+
+        public void SignedInUser(string Name)
+        {
+            lbUserName.Text = Name;
+
+            //if (Name == "Reception" /*|| signIn.Name == "reception"*/)
+            //{
+            //    BtnAppointment.Enabled = false;
+            //}
+        }
     }
 }

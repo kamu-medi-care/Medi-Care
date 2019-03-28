@@ -36,9 +36,9 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnMedicine = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.btnViewMedicine = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.btnReport = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtBloodPresure = new System.Windows.Forms.TextBox();
@@ -65,6 +65,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbUserName = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -79,9 +80,9 @@
             this.toolStripSeparator5,
             this.BtnMedicine,
             this.toolStripSeparator2,
-            this.toolStripButton4,
+            this.btnViewMedicine,
             this.toolStripSeparator3,
-            this.toolStripButton3,
+            this.btnReport,
             this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -143,16 +144,16 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
             // 
-            // toolStripButton4
+            // btnViewMedicine
             // 
-            this.toolStripButton4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripButton4.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(115, 41);
-            this.toolStripButton4.Text = "View Medicine";
-            this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnViewMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnViewMedicine.Image")));
+            this.btnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnViewMedicine.Name = "btnViewMedicine";
+            this.btnViewMedicine.Size = new System.Drawing.Size(115, 41);
+            this.btnViewMedicine.Text = "View Medicine";
+            this.btnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator3
             // 
@@ -160,16 +161,16 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
             // 
-            // toolStripButton3
+            // btnReport
             // 
-            this.toolStripButton3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.toolStripButton3.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(61, 41);
-            this.toolStripButton3.Text = "Report";
-            this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnReport.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnReport.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnReport.Name = "btnReport";
+            this.btnReport.Size = new System.Drawing.Size(61, 41);
+            this.btnReport.Text = "Report";
+            this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // toolStripSeparator4
             // 
@@ -470,12 +471,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
             // 
+            // lbUserName
+            // 
+            this.lbUserName.AutoSize = true;
+            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbUserName.ForeColor = System.Drawing.Color.White;
+            this.lbUserName.Location = new System.Drawing.Point(670, 60);
+            this.lbUserName.Name = "lbUserName";
+            this.lbUserName.Size = new System.Drawing.Size(0, 26);
+            this.lbUserName.TabIndex = 0;
+            // 
             // Reception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 526);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Reception";
@@ -499,9 +511,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripButton BtnMedicine;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton btnReport;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton btnViewMedicine;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
@@ -528,5 +540,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTemperature;
+        private System.Windows.Forms.Label lbUserName;
     }
 }
