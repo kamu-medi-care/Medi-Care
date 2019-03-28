@@ -51,6 +51,7 @@
     <Compile Include="MedicineService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReceptionService.cs" />
+    <Compile Include="SignInService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Medi_Care.Database\Medi_Care.Database.csproj">
@@ -64,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <Compile Include="Appointment.Service.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

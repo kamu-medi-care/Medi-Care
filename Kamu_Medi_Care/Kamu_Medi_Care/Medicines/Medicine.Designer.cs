@@ -66,6 +66,7 @@
             // 
             this.dgvMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMedicine.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMedicine.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMedicine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMedicine.Location = new System.Drawing.Point(163, 110);
             this.dgvMedicine.Name = "dgvMedicine";

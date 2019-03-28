@@ -69,6 +69,14 @@
     <Compile Include="Migrations\201903271458286_SignIn.Designer.cs">
       <DependentUpon>201903271458286_SignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903280942028_Appointment.cs" />
+    <Compile Include="Migrations\201903280942028_Appointment.Designer.cs">
+      <DependentUpon>201903280942028_Appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903280948299_ApplyAnnotationOnDate.cs" />
+    <Compile Include="Migrations\201903280948299_ApplyAnnotationOnDate.Designer.cs">
+      <DependentUpon>201903280948299_ApplyAnnotationOnDate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -97,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903271458286_SignIn.resx">
       <DependentUpon>201903271458286_SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903280942028_Appointment.resx">
+      <DependentUpon>201903280942028_Appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903280948299_ApplyAnnotationOnDate.resx">
+      <DependentUpon>201903280948299_ApplyAnnotationOnDate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,8 +45,8 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnSignIn);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtPassword);
+            this.panel1.Controls.Add(this.txtUserName);
             this.panel1.Location = new System.Drawing.Point(299, 96);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(448, 298);
@@ -104,26 +104,26 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Fuchsia;
-            this.textBox2.Location = new System.Drawing.Point(138, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(286, 27);
-            this.textBox2.TabIndex = 3;
+            this.txtPassword.BackColor = System.Drawing.Color.White;
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Fuchsia;
+            this.txtPassword.Location = new System.Drawing.Point(138, 110);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(286, 27);
+            this.txtPassword.TabIndex = 3;
             // 
-            // textBox1
+            // txtUserName
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.textBox1.Location = new System.Drawing.Point(138, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 27);
-            this.textBox1.TabIndex = 4;
+            this.txtUserName.BackColor = System.Drawing.Color.White;
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.ForeColor = System.Drawing.Color.Fuchsia;
+            this.txtUserName.Location = new System.Drawing.Point(138, 57);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(286, 27);
+            this.txtUserName.TabIndex = 4;
             // 
             // panel2
             // 
@@ -156,8 +156,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSignIn;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.Panel panel2;
     }
 }

@@ -8,5 +8,15 @@ namespace Kamu_Medi_Care.Appointment
         {
             InitializeComponent();
         }
+
+        private Medi_Care.Service.Appointment appointment = new Medi_Care.Service.Appointment();
+
+        private void Appointment_Load(object sender, System.EventArgs e)
+        {
+            var data= appointment.GetMedicine();
+            cmbMedicine.DataSource = data;
+            cmbMedicine.ValueMember = "Id";
+            cmbMedicine.DisplayMember = "MedicineName";
+        }
     }
 }
