@@ -111,6 +111,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Receptions\Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
@@ -145,6 +146,9 @@
       <Project>{9F57AE74-4E7D-4185-B701-0DB3827E2B9B}</Project>
       <Name>Medi_care.Message</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
