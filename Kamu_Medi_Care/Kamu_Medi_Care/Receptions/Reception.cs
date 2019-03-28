@@ -74,10 +74,13 @@ namespace Kamu_Medi_Care.Receptions
         {
             lbUserName.Text = Name;
 
-            //if (Name == "Reception" /*|| signIn.Name == "reception"*/)
-            //{
-            //    BtnAppointment.Enabled = false;
-            //}
+            if (Name == "Reception" /*|| signIn.Name == "reception"*/)
+            {
+                BtnAppointment.Enabled = false;
+                BtnMedicine.Enabled = false;
+                btnViewMedicine.Enabled = false;
+                btnReport.Enabled = false;
+            }
         }
     }
 }
