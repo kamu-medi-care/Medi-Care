@@ -141,6 +141,10 @@
       <Project>{F47A8FEC-DF5B-466F-8677-52B6E3F9C603}</Project>
       <Name>Medi_Care.Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Message\Medi_care.Message.csproj">
+      <Project>{9F57AE74-4E7D-4185-B701-0DB3827E2B9B}</Project>
+      <Name>Medi_care.Message</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
