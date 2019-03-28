@@ -1,5 +1,6 @@
 ﻿using Medi_Care.Database;
 using Medi_Care.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,5 +16,27 @@ namespace Medi_Care.Service
                 return data;
             }
         }
+
+        public int AppoitmentId()
+        {
+            using (var context = new MCContext())
+            {
+                int maxId = context.AppointmentModels.Select(p => p.Id).DefaultIfEmpty(0).Max();
+
+                return maxId + 1;
+            }
+        }
+
+        public void ReceptionId(int id)
+        {
+            //using (var context = new MCContext())
+            //{
+            //    int maxId = context.ReceptionModels.ToString().Where(p=>p.Id==id.ToString);
+
+            //    return maxId + 1;
+            //}
+        }
+
     }
+
 }

@@ -17,6 +17,14 @@ namespace Kamu_Medi_Care.Appointment
             cmbMedicine.DataSource = data;
             cmbMedicine.ValueMember = "Id";
             cmbMedicine.DisplayMember = "MedicineName";
+
+            GetId();
+        }
+
+        private void GetId()
+        {
+            var id = appointment.AppoitmentId();
+            appointment.ReceptionId(id);
         }
     }
 }
