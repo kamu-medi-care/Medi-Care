@@ -36,7 +36,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtUserName = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,9 +48,9 @@
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.txtPassword);
             this.panel1.Controls.Add(this.txtUserName);
-            this.panel1.Location = new System.Drawing.Point(299, 96);
+            this.panel1.Location = new System.Drawing.Point(77, 146);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(448, 298);
+            this.panel1.Size = new System.Drawing.Size(448, 262);
             this.panel1.TabIndex = 3;
             // 
             // label2
@@ -86,7 +86,7 @@
             this.btnSignIn.Location = new System.Drawing.Point(138, 190);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(96, 36);
-            this.btnSignIn.TabIndex = 5;
+            this.btnSignIn.TabIndex = 3;
             this.btnSignIn.Text = "Sign In";
             this.btnSignIn.UseVisualStyleBackColor = false;
             this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
@@ -100,7 +100,7 @@
             this.btnCancel.Location = new System.Drawing.Point(328, 190);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(96, 36);
-            this.btnCancel.TabIndex = 6;
+            this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -114,7 +114,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(286, 27);
-            this.txtPassword.TabIndex = 3;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtUserName
             // 
@@ -124,22 +124,27 @@
             this.txtUserName.Location = new System.Drawing.Point(138, 57);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(286, 27);
-            this.txtUserName.TabIndex = 4;
+            this.txtUserName.TabIndex = 1;
             // 
-            // panel2
+            // label3
             // 
-            this.panel2.Location = new System.Drawing.Point(41, 96);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 298);
-            this.panel2.TabIndex = 9;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Magenta;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(221, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 22);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "User Name";
             // 
             // SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 481);
-            this.Controls.Add(this.panel2);
+            this.ClientSize = new System.Drawing.Size(606, 481);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "SignIn";
@@ -148,6 +153,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,6 +166,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label3;
     }
 }
