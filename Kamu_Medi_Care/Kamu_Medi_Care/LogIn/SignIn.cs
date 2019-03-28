@@ -39,7 +39,7 @@ namespace Kamu_Medi_Care.LogIn
             if (exist)
             {
                 Reception reception = new Reception();
-                reception.SignedInUser(signIn.Name);
+                reception.SignedInUser(signIn.Name.ToLower());
                 reception.Show();
                 this.Hide();
 
