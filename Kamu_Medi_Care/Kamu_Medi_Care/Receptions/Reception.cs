@@ -74,7 +74,7 @@ namespace Kamu_Medi_Care.Receptions
         {
             lbUserName.Text = Name;
 
-            if (Name == "reception" /*|| signIn.Name == "reception"*/)
+            if (Name == "reception")
             {
                 BtnAppointment.Enabled = false;
                 BtnMedicine.Enabled = false;
