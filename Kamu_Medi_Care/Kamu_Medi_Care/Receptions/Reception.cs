@@ -72,7 +72,7 @@ namespace Kamu_Medi_Care.Receptions
 
         public void SignedInUser(string Name)
         {
-            lbUserName.Text = Name;
+            lbUserName.Text = Name.ToUpper();
 
             if (Name == "reception")
             {
