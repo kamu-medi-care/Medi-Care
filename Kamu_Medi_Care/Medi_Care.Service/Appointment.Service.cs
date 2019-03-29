@@ -27,14 +27,15 @@ namespace Medi_Care.Service
             }
         }
 
-        public void ReceptionId(int id)
+        public int ReceptionId(int id)
         {
-            //using (var context = new MCContext())
-            //{
-            //    int maxId = context.ReceptionModels.ToString().Where(p=>p.Id==id.ToString);
+            using (var context = new MCContext())
+            {
+                var receptionModel = context.ReceptionModels.Where(s => s.Id == id).SingleOrDefault();
 
-            //    return maxId + 1;
-            //}
+                int receptId = receptionModel.Id;
+                return receptId;
+            }
         }
 
     }

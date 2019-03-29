@@ -24,7 +24,8 @@ namespace Kamu_Medi_Care.Appointment
         private void GetId()
         {
             var id = appointment.AppoitmentId();
-            appointment.ReceptionId(id);
+            LabelId.Text=appointment.ReceptionId(id).ToString();
+
         }
     }
 }
