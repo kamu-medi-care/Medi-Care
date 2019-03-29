@@ -16,12 +16,12 @@ namespace Kamu_Medi_Care.LogIn
         private SignInService signInService = new SignInService();
         AlertMessage message = new AlertMessage();
 
-        private void btnCancel_Click(object sender, System.EventArgs e)
+        private void BtnCancel_Click(object sender, System.EventArgs e)
         {
             this.Hide();
         }
 
-        private void btnSignIn_Click(object sender, System.EventArgs e)
+        private void BtnSignIn_Click(object sender, System.EventArgs e)
         {
             IsValid();
         }
@@ -39,7 +39,7 @@ namespace Kamu_Medi_Care.LogIn
             if (exist)
             {
                 Reception reception = new Reception();
-                reception.SignedInUser(signIn.Name.ToUpper());
+                reception.SignedInUser(signIn.Name.ToLower());
                 reception.Show();
                 this.Hide();
 

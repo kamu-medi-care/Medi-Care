@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reception));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnViewReception = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -94,7 +93,7 @@
             // 
             this.BtnViewReception.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BtnViewReception.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnViewReception.Image = ((System.Drawing.Image)(resources.GetObject("BtnViewReception.Image")));
+            this.BtnViewReception.Image = global::Kamu_Medi_Care.Properties.Resources.online_support_512;
             this.BtnViewReception.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnViewReception.Name = "BtnViewReception";
             this.BtnViewReception.Size = new System.Drawing.Size(121, 41);
@@ -112,7 +111,7 @@
             // 
             this.BtnAppointment.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BtnAppointment.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnAppointment.Image = ((System.Drawing.Image)(resources.GetObject("BtnAppointment.Image")));
+            this.BtnAppointment.Image = global::Kamu_Medi_Care.Properties.Resources.contract_icon_26;
             this.BtnAppointment.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnAppointment.Name = "BtnAppointment";
             this.BtnAppointment.Size = new System.Drawing.Size(112, 41);
@@ -130,7 +129,7 @@
             // 
             this.BtnMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.BtnMedicine.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnMedicine.Image = ((System.Drawing.Image)(resources.GetObject("BtnMedicine.Image")));
+            this.BtnMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.png_drugs_drugs_medication_pills_treatment_icon_512;
             this.BtnMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.BtnMedicine.Name = "BtnMedicine";
             this.BtnMedicine.Size = new System.Drawing.Size(84, 41);
@@ -148,7 +147,7 @@
             // 
             this.btnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnViewMedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnViewMedicine.Image")));
+            this.btnViewMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.medicine;
             this.btnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnViewMedicine.Name = "btnViewMedicine";
             this.btnViewMedicine.Size = new System.Drawing.Size(115, 41);
@@ -165,7 +164,7 @@
             // 
             this.btnReport.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnReport.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
+            this.btnReport.Image = global::Kamu_Medi_Care.Properties.Resources.record;
             this.btnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReport.Name = "btnReport";
             this.btnReport.Size = new System.Drawing.Size(61, 41);

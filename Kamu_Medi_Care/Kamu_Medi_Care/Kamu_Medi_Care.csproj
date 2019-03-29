@@ -150,5 +150,32 @@
   <ItemGroup>
     <None Include="Resources\images %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-logo-web-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_man_male_profile_account_person_people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_login_man_profile_account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contract-icon-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\online_support-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-drugs-drugs-medication-pills-treatment-icon-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signin.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
