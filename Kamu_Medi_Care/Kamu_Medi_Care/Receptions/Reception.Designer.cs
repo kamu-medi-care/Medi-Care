@@ -64,7 +64,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbUserName = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -470,15 +470,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
             // 
-            // lbUserName
+            // label
             // 
-            this.lbUserName.AutoSize = true;
-            this.lbUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUserName.ForeColor = System.Drawing.Color.White;
-            this.lbUserName.Location = new System.Drawing.Point(670, 60);
-            this.lbUserName.Name = "lbUserName";
-            this.lbUserName.Size = new System.Drawing.Size(0, 26);
-            this.lbUserName.TabIndex = 0;
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(782, 60);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(0, 26);
+            this.label.TabIndex = 0;
             // 
             // Reception
             // 
@@ -486,7 +486,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 526);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lbUserName);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Reception";
@@ -539,6 +539,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTemperature;
-        private System.Windows.Forms.Label lbUserName;
+        private System.Windows.Forms.Label label;
     }
 }

@@ -24,5 +24,14 @@ namespace Medi_Care.Service
                 return data;
             };
         }
+
+        public List<ReceptionModel> GetPatientByName(string name)
+        {
+            using (var context = new MCContext())
+            {
+                var data = context.ReceptionModels.Where(c=>c.PName==name).ToList();
+                return data;
+            };
+        }
     }
 }
