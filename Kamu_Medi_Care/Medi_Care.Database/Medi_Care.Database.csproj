@@ -77,6 +77,18 @@
     <Compile Include="Migrations\201903280948299_ApplyAnnotationOnDate.Designer.cs">
       <DependentUpon>201903280948299_ApplyAnnotationOnDate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903300700098_RemoveMedicineFromAppointment.cs" />
+    <Compile Include="Migrations\201903300700098_RemoveMedicineFromAppointment.Designer.cs">
+      <DependentUpon>201903300700098_RemoveMedicineFromAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903300813037_AppointedMedicine.cs" />
+    <Compile Include="Migrations\201903300813037_AppointedMedicine.Designer.cs">
+      <DependentUpon>201903300813037_AppointedMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903301554118_AddPatitenIdInMedicineModel.cs" />
+    <Compile Include="Migrations\201903301554118_AddPatitenIdInMedicineModel.Designer.cs">
+      <DependentUpon>201903301554118_AddPatitenIdInMedicineModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -111,6 +123,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903280948299_ApplyAnnotationOnDate.resx">
       <DependentUpon>201903280948299_ApplyAnnotationOnDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300700098_RemoveMedicineFromAppointment.resx">
+      <DependentUpon>201903300700098_RemoveMedicineFromAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903300813037_AppointedMedicine.resx">
+      <DependentUpon>201903300813037_AppointedMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903301554118_AddPatitenIdInMedicineModel.resx">
+      <DependentUpon>201903301554118_AddPatitenIdInMedicineModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

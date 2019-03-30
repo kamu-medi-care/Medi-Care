@@ -38,6 +38,24 @@ namespace Medi_Care.Service
             }
         }
 
+        public void SaveAppointment(AppointmentModel appointmentModel)
+        {
+            using (var context = new MCContext())
+            {
+                context.AppointmentModels.Add(appointmentModel);
+                context.SaveChanges();
+            }
+        }
+
+        public void SaveMedicine(AppointMedicineModel medicine)
+        {
+            using (var context = new MCContext())
+            {
+                context.AppointMedicineModels.Add(medicine);
+                context.SaveChanges();
+            }
+        }
+
     }
 
 }

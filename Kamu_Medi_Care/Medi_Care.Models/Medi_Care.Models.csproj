@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointMedicineModel.cs" />
     <Compile Include="AppointmentModel.cs" />
     <Compile Include="MedicineModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,5 +1,7 @@
 ﻿using Kamu_Medi_Care.Templates;
+using Medi_Care.Models;
 using System;
+using System.Data;
 
 namespace Kamu_Medi_Care.Appointment
 {
@@ -11,16 +13,25 @@ namespace Kamu_Medi_Care.Appointment
         }
 
         private Medi_Care.Service.Appointment appointment = new Medi_Care.Service.Appointment();
+        DataTable dataTable=new DataTable();
+
+        
 
         private void Appointment_Load(object sender, System.EventArgs e)
         {
             var data= appointment.GetMedicine();
-            cmbMedicine.DataSource = data;
-            cmbMedicine.ValueMember = "Id";
-            cmbMedicine.DisplayMember = "MedicineName";
+            CmbMedicine.DataSource = data;
+            CmbMedicine.ValueMember = "Id";
+            CmbMedicine.DisplayMember = "MedicineName";
+            CmbMedicine.SelectedIndex = -1;
 
             GetId();
             GetPatientFormReception();
+
+            dataTable.Columns.Add("Medicine", typeof(string));
+            dataTable.Columns.Add("In a Day", typeof(string));
+
+            DgvMedicine.DataSource = dataTable;
         }
 
         private void BtnNext_Click(object sender, EventArgs e)
@@ -49,7 +60,39 @@ namespace Kamu_Medi_Care.Appointment
 
         private void BtnPrint_Click(object sender, EventArgs e)
         {
+            SaveAppointment();
+            SaveMedicine();
             RefreshForm();
+        }
+
+        private void SaveAppointment()
+        {
+            AppointmentModel appointmentModel = new AppointmentModel
+            {
+                Name = txtName.Text,
+                FName = txtFatherName.Text,
+                Temperature = txtTemperature.Text,
+                BloodPresure = txtBloodPresure.Text,
+                PrevDate = Convert.ToDateTime(txtPreVisit.Text),
+                Age = Convert.ToInt32(txtAge.Text),
+                Disease = txtDisease.Text,
+                NextDate = Convert.ToDateTime(txtNextVisit.Text),
+            };
+            appointment.SaveAppointment(appointmentModel);
+        }
+
+        private void SaveMedicine()
+        {
+            for(int i=0; i<DgvMedicine.Rows.Count-1; i++)
+            {
+                AppointMedicineModel medicineModel = new AppointMedicineModel
+                {
+                    PatientId = LabelId.Text,
+                    Name = DgvMedicine.Rows[i].Cells[0].Value.ToString(),
+                    InaDay = DgvMedicine.Rows[i].Cells[1].Value.ToString(),
+                };
+                appointment.SaveMedicine(medicineModel);
+            }
         }
 
         private void RefreshForm()
@@ -61,8 +104,15 @@ namespace Kamu_Medi_Care.Appointment
             txtPreVisit.Clear();
             txtAge.Clear();
             txtDisease.Clear();
-            cmbMedicine.SelectedIndex = -1;
+            CmbMedicine.SelectedIndex = -1;
             txtNextVisit.Clear();
+            dataTable.Clear();
+        }
+
+        private void CmbMedicine_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
+        {
+            dataTable.Rows.Add(CmbMedicine.Text);
+            DgvMedicine.DataSource = dataTable;
         }
     }
 }

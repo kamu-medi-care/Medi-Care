@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtDisease = new System.Windows.Forms.RichTextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
-            this.cmbMedicine = new System.Windows.Forms.ComboBox();
+            this.CmbMedicine = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNextVisit = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -41,9 +41,7 @@
             this.txtPreVisit = new System.Windows.Forms.TextBox();
             this.BtnNext = new System.Windows.Forms.Button();
             this.BtnPrint = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Sr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Medicine = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvMedicine = new System.Windows.Forms.DataGridView();
             this.txtBloodPresure = new System.Windows.Forms.TextBox();
             this.txtFatherName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,7 +54,7 @@
             this.LabelId = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvMedicine)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -67,7 +65,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txtDisease);
             this.panel1.Controls.Add(this.txtAge);
-            this.panel1.Controls.Add(this.cmbMedicine);
+            this.panel1.Controls.Add(this.CmbMedicine);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.txtNextVisit);
             this.panel1.Controls.Add(this.label7);
@@ -77,7 +75,7 @@
             this.panel1.Controls.Add(this.txtPreVisit);
             this.panel1.Controls.Add(this.BtnNext);
             this.panel1.Controls.Add(this.BtnPrint);
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.DgvMedicine);
             this.panel1.Controls.Add(this.txtBloodPresure);
             this.panel1.Controls.Add(this.txtFatherName);
             this.panel1.Controls.Add(this.label5);
@@ -110,16 +108,17 @@
             this.txtAge.Size = new System.Drawing.Size(239, 27);
             this.txtAge.TabIndex = 15;
             // 
-            // cmbMedicine
+            // CmbMedicine
             // 
-            this.cmbMedicine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbMedicine.ForeColor = System.Drawing.Color.Magenta;
-            this.cmbMedicine.FormattingEnabled = true;
-            this.cmbMedicine.Location = new System.Drawing.Point(623, 179);
-            this.cmbMedicine.Name = "cmbMedicine";
-            this.cmbMedicine.Size = new System.Drawing.Size(239, 28);
-            this.cmbMedicine.TabIndex = 2;
+            this.CmbMedicine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbMedicine.ForeColor = System.Drawing.Color.Magenta;
+            this.CmbMedicine.FormattingEnabled = true;
+            this.CmbMedicine.Location = new System.Drawing.Point(623, 179);
+            this.CmbMedicine.Name = "CmbMedicine";
+            this.CmbMedicine.Size = new System.Drawing.Size(239, 28);
+            this.CmbMedicine.TabIndex = 2;
+            this.CmbMedicine.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CmbMedicine_KeyPress);
             // 
             // label6
             // 
@@ -223,29 +222,16 @@
             this.BtnPrint.UseVisualStyleBackColor = false;
             this.BtnPrint.Click += new System.EventHandler(this.BtnPrint_Click);
             // 
-            // dataGridView1
+            // DgvMedicine
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Sr,
-            this.Medicine});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 274);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(805, 129);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // Sr
-            // 
-            this.Sr.HeaderText = "Sr #";
-            this.Sr.Name = "Sr";
-            // 
-            // Medicine
-            // 
-            this.Medicine.HeaderText = "Medicine Name";
-            this.Medicine.Name = "Medicine";
+            this.DgvMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvMedicine.BackgroundColor = System.Drawing.Color.White;
+            this.DgvMedicine.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DgvMedicine.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvMedicine.Location = new System.Drawing.Point(57, 274);
+            this.DgvMedicine.Name = "DgvMedicine";
+            this.DgvMedicine.Size = new System.Drawing.Size(805, 129);
+            this.DgvMedicine.TabIndex = 11;
             // 
             // txtBloodPresure
             // 
@@ -351,7 +337,7 @@
             this.LabelId.Name = "LabelId";
             this.LabelId.Size = new System.Drawing.Size(20, 22);
             this.LabelId.TabIndex = 6;
-            this.LabelId.Text = "0";
+            this.LabelId.Text = "1";
             // 
             // label8
             // 
@@ -379,7 +365,7 @@
             this.Load += new System.EventHandler(this.Appointment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvMedicine)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,10 +384,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTemperature;
-        private System.Windows.Forms.ComboBox cmbMedicine;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sr;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Medicine;
+        private System.Windows.Forms.ComboBox CmbMedicine;
+        private System.Windows.Forms.DataGridView DgvMedicine;
         private System.Windows.Forms.Button BtnPrint;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtPreVisit;

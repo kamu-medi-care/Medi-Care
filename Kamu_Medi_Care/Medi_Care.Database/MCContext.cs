@@ -12,6 +12,7 @@ namespace Medi_Care.Database
 
         public DbSet<ReceptionModel> ReceptionModels { get; set; }
         public DbSet<AppointmentModel> AppointmentModels { get; set; }
+        public DbSet<AppointMedicineModel> AppointMedicineModels { get; set; }
         public DbSet<MedicineModel> MedicineModels { get; set; }
         public DbSet<SignIn> SignIns { get; set; }
     }

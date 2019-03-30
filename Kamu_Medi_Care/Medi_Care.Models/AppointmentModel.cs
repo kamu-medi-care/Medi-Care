@@ -11,7 +11,7 @@ namespace Medi_Care.Models
         public string BloodPresure { get; set; }
         public DateTime PrevDate { get; set; }
         public string Disease { get; set; }
-        public string Medicine { get; set; }
+        //public string Medicine { get; set; }
         public int Age { get; set; }
         public DateTime NextDate { get; set; }
     }
