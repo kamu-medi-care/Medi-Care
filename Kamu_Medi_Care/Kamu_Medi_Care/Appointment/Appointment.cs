@@ -2,6 +2,7 @@
 using Medi_Care.Models;
 using System;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Kamu_Medi_Care.Appointment
 {
@@ -111,8 +112,12 @@ namespace Kamu_Medi_Care.Appointment
 
         private void CmbMedicine_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)
         {
-            dataTable.Rows.Add(CmbMedicine.Text);
-            DgvMedicine.DataSource = dataTable;
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                dataTable.Rows.Add(CmbMedicine.Text);
+                DgvMedicine.DataSource = dataTable;
+            }
         }
+      
     }
 }
