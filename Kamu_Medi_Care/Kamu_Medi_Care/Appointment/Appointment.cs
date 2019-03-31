@@ -77,7 +77,7 @@ namespace Kamu_Medi_Care.Appointment
                 PrevDate = Convert.ToDateTime(txtPreVisit.Text),
                 Age = Convert.ToInt32(txtAge.Text),
                 Disease = txtDisease.Text,
-                NextDate = Convert.ToDateTime(txtNextVisit.Text),
+                NextDate = nextVistDateTimePicker.Value,
             };
             appointment.SaveAppointment(appointmentModel);
         }
@@ -106,7 +106,6 @@ namespace Kamu_Medi_Care.Appointment
             txtAge.Clear();
             txtDisease.Clear();
             CmbMedicine.SelectedIndex = -1;
-            txtNextVisit.Clear();
             dataTable.Clear();
         }
 

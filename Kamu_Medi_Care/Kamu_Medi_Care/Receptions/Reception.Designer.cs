@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reception));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.BtnViewReception = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -65,6 +66,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
+            this.btnLogout = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -82,7 +84,8 @@
             this.btnViewMedicine,
             this.toolStripSeparator3,
             this.btnReport,
-            this.toolStripSeparator4});
+            this.toolStripSeparator4,
+            this.btnLogout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(969, 44);
@@ -312,9 +315,9 @@
             this.txtDate.ForeColor = System.Drawing.Color.Magenta;
             this.txtDate.Location = new System.Drawing.Point(587, 29);
             this.txtDate.Name = "txtDate";
+            this.txtDate.ReadOnly = true;
             this.txtDate.Size = new System.Drawing.Size(121, 27);
             this.txtDate.TabIndex = 111;
-            this.txtDate.Text = "date";
             // 
             // txtId
             // 
@@ -322,9 +325,9 @@
             this.txtId.ForeColor = System.Drawing.Color.Magenta;
             this.txtId.Location = new System.Drawing.Point(740, 29);
             this.txtId.Name = "txtId";
+            this.txtId.ReadOnly = true;
             this.txtId.Size = new System.Drawing.Size(86, 27);
             this.txtId.TabIndex = 112;
-            this.txtId.Text = "Id";
             // 
             // txtFatherName
             // 
@@ -480,6 +483,19 @@
             this.label.Size = new System.Drawing.Size(0, 26);
             this.label.TabIndex = 0;
             // 
+            // btnLogout
+            // 
+            this.btnLogout.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnLogout.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(23, 41);
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // Reception
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,5 +556,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtTemperature;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.ToolStripButton btnLogout;
     }
 }

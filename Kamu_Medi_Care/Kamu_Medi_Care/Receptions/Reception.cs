@@ -12,6 +12,8 @@ namespace Kamu_Medi_Care.Receptions
         public Reception()
         {
             InitializeComponent();
+
+            SetIdAndTime();
         }
 
         ReceptionService receptionService=new ReceptionService();
@@ -83,6 +85,20 @@ namespace Kamu_Medi_Care.Receptions
             }
         }
 
-       
+        private Medi_Care.Service.Appointment appointment = new Medi_Care.Service.Appointment();
+
+        public void SetIdAndTime()
+        {
+            txtDate.Text = DateTime.Now.Date.ToShortDateString();
+
+            txtId.Text = appointment.AppoitmentId().ToString();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LogIn.SignIn signIn = new LogIn.SignIn();
+            signIn.Show();
+        }
     }
 }
