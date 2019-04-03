@@ -1,4 +1,4 @@
-﻿using Kamu_Medi_Care.LogIn;
+﻿using Kamu_Medi_Care.Receptions;
 using System;
 using System.Windows.Forms;
 
@@ -14,7 +14,7 @@ namespace Kamu_Medi_Care
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SignIn());
+            Application.Run(new Reception());
         }
     }
 }

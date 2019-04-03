@@ -1,6 +1,7 @@
 ﻿using Kamu_Medi_Care.Appointment;
 using Kamu_Medi_Care.Medicines;
 using Kamu_Medi_Care.Models;
+using Kamu_Medi_Care.Report;
 using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
 using System;
@@ -96,9 +97,15 @@ namespace Kamu_Medi_Care.Receptions
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             LogIn.SignIn signIn = new LogIn.SignIn();
             signIn.Show();
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ViewReport viewReport=new ViewReport();
+            viewReport.Show();
         }
     }
 }

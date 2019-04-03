@@ -85,6 +85,12 @@
     <Compile Include="Receptions\Reception.Designer.cs">
       <DependentUpon>Reception.cs</DependentUpon>
     </Compile>
+    <Compile Include="Report\ViewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ViewReport.Designer.cs">
+      <DependentUpon>ViewReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Templates\Template.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Receptions\Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ViewReport.resx">
+      <DependentUpon>ViewReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Templates\Template.resx">
       <DependentUpon>Template.cs</DependentUpon>
@@ -176,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\signin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-1466292-1241152.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

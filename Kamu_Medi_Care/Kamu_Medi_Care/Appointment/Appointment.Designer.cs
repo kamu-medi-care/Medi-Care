@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.nextVistDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtDisease = new System.Windows.Forms.RichTextBox();
             this.txtAge = new System.Windows.Forms.TextBox();
             this.CmbMedicine = new System.Windows.Forms.ComboBox();
@@ -52,7 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LabelId = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.nextVistDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMedicine)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +88,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(937, 477);
             this.panel1.TabIndex = 4;
+            // 
+            // nextVistDateTimePicker
+            // 
+            this.nextVistDateTimePicker.CalendarForeColor = System.Drawing.Color.Fuchsia;
+            this.nextVistDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextVistDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.nextVistDateTimePicker.Location = new System.Drawing.Point(623, 231);
+            this.nextVistDateTimePicker.Name = "nextVistDateTimePicker";
+            this.nextVistDateTimePicker.Size = new System.Drawing.Size(239, 27);
+            this.nextVistDateTimePicker.TabIndex = 16;
             // 
             // txtDisease
             // 
@@ -344,14 +354,6 @@
             this.label8.Size = new System.Drawing.Size(104, 22);
             this.label8.TabIndex = 5;
             this.label8.Text = "Patient No :";
-            // 
-            // nextVistDateTimePicker
-            // 
-            this.nextVistDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.nextVistDateTimePicker.Location = new System.Drawing.Point(623, 231);
-            this.nextVistDateTimePicker.Name = "nextVistDateTimePicker";
-            this.nextVistDateTimePicker.Size = new System.Drawing.Size(239, 20);
-            this.nextVistDateTimePicker.TabIndex = 16;
             // 
             // Appointment
             // 

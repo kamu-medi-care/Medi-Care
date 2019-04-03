@@ -31,7 +31,12 @@ namespace Kamu_Medi_Care.Appointment
             var name = txtName.Text;
             var data=receptionService.GetPatientByName(name);
             dgvReception.DataSource = data;
-            //dgvReception.
+
+            if (string.IsNullOrEmpty(name))
+            {
+                var products = receptionService.GetReception();
+                dgvReception.DataSource = products;
+            }
         }
     }
 }
