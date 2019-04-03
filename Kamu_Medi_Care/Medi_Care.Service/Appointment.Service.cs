@@ -17,6 +17,8 @@ namespace Medi_Care.Service
             }
         }
 
+
+
         public int AppoitmentId()
         {
             using (var context = new MCContext())
@@ -27,6 +29,15 @@ namespace Medi_Care.Service
             }
         }
 
+        public int ReceptionId()
+        {
+            using (var context = new MCContext())
+            {
+                int maxId = context.ReceptionModels.Select(p => p.Id).DefaultIfEmpty(0).Max();
+
+                return maxId + 1;
+            }
+        }
         public ReceptionModel ReceptionId(int id)
         {
             using (var context = new MCContext())

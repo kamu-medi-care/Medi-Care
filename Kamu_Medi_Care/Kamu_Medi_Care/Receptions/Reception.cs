@@ -50,6 +50,7 @@ namespace Kamu_Medi_Care.Receptions
 
             receptionService.ReferPatient(reception);
             RefreshReception();
+            SetIdAndTime();
         }
 
         public void RefreshReception()
@@ -92,7 +93,9 @@ namespace Kamu_Medi_Care.Receptions
         {
             DtpDate.Text = DateTime.Now.Date.ToShortDateString();
 
-            txtId.Text = appointment.AppoitmentId().ToString();
+            txtId.Text = appointment.ReceptionId().ToString();
+
+            
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)
