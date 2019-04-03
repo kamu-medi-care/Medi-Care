@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Medi_Care.Models
+﻿namespace Medi_Care.Models
 {
     public class AppointmentModel
     {
@@ -9,10 +7,10 @@ namespace Medi_Care.Models
         public string FName { get; set; }
         public string Temperature { get; set; }
         public string BloodPresure { get; set; }
-        public DateTime PrevDate { get; set; }
+        public string PrevDate { get; set; }
         public string Disease { get; set; }
         //public string Medicine { get; set; }
         public int Age { get; set; }
-        public DateTime NextDate { get; set; }
+        public string NextDate { get; set; }
     }
 }

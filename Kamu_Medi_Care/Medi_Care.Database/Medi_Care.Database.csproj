@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201903301554118_AddPatitenIdInMedicineModel.Designer.cs">
       <DependentUpon>201903301554118_AddPatitenIdInMedicineModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904031235481_ApplyAnnotation.cs" />
+    <Compile Include="Migrations\201904031235481_ApplyAnnotation.Designer.cs">
+      <DependentUpon>201904031235481_ApplyAnnotation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903301554118_AddPatitenIdInMedicineModel.resx">
       <DependentUpon>201903301554118_AddPatitenIdInMedicineModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904031235481_ApplyAnnotation.resx">
+      <DependentUpon>201904031235481_ApplyAnnotation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

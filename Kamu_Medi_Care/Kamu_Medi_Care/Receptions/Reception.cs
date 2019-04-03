@@ -35,7 +35,7 @@ namespace Kamu_Medi_Care.Receptions
         {
             var reception = new ReceptionModel()
             {
-                DateTime = DateTime.Now,
+                DateTime = DtpDate.Text,
                 DrName = cmbDrName.SelectedItem.ToString(),
                 PName = txtName.Text,
                 FName = txtFatherName.Text,
@@ -82,7 +82,7 @@ namespace Kamu_Medi_Care.Receptions
                 BtnAppointment.Enabled = false;
                 BtnMedicine.Enabled = false;
                 btnViewMedicine.Enabled = false;
-                btnReport.Enabled = false;
+                BtnReport.Enabled = false;
             }
         }
 
@@ -90,19 +90,19 @@ namespace Kamu_Medi_Care.Receptions
 
         public void SetIdAndTime()
         {
-            txtDate.Text = DateTime.Now.Date.ToShortDateString();
+            DtpDate.Text = DateTime.Now.Date.ToShortDateString();
 
             txtId.Text = appointment.AppoitmentId().ToString();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        private void BtnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
             LogIn.SignIn signIn = new LogIn.SignIn();
             signIn.Show();
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
+        private void BtnReport_Click(object sender, EventArgs e)
         {
             ViewReport viewReport=new ViewReport();
             viewReport.Show();

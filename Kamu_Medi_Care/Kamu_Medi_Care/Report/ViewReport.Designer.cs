@@ -32,7 +32,7 @@
             this.dtpFrom = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpTo = new System.Windows.Forms.DateTimePicker();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.BtnSearch = new System.Windows.Forms.Button();
             this.dgvReport = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReport)).BeginInit();
@@ -53,8 +53,9 @@
             // 
             this.dtpFrom.CalendarForeColor = System.Drawing.Color.Fuchsia;
             this.dtpFrom.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.dtpFrom.CustomFormat = "dd-MM-yyyy";
             this.dtpFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFrom.Location = new System.Drawing.Point(147, 83);
             this.dtpFrom.Name = "dtpFrom";
             this.dtpFrom.Size = new System.Drawing.Size(200, 27);
@@ -75,26 +76,27 @@
             // 
             this.dtpTo.CalendarForeColor = System.Drawing.Color.Fuchsia;
             this.dtpTo.CalendarTitleForeColor = System.Drawing.Color.Black;
+            this.dtpTo.CustomFormat = "dd-MM-yyyy";
             this.dtpTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTo.Location = new System.Drawing.Point(464, 83);
             this.dtpTo.Name = "dtpTo";
             this.dtpTo.Size = new System.Drawing.Size(200, 27);
             this.dtpTo.TabIndex = 1;
             // 
-            // btnSearch
+            // BtnSearch
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.Location = new System.Drawing.Point(724, 81);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(96, 36);
-            this.btnSearch.TabIndex = 2;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.BtnSearch.BackColor = System.Drawing.Color.White;
+            this.BtnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSearch.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnSearch.Location = new System.Drawing.Point(724, 81);
+            this.BtnSearch.Name = "BtnSearch";
+            this.BtnSearch.Size = new System.Drawing.Size(96, 36);
+            this.BtnSearch.TabIndex = 2;
+            this.BtnSearch.Text = "Search";
+            this.BtnSearch.UseVisualStyleBackColor = false;
+            this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
             // 
             // dgvReport
             // 
@@ -125,7 +127,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(887, 468);
             this.Controls.Add(this.dgvReport);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.BtnSearch);
             this.Controls.Add(this.dtpTo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -147,7 +149,7 @@
         private System.Windows.Forms.DateTimePicker dtpFrom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpTo;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button BtnSearch;
         private System.Windows.Forms.DataGridView dgvReport;
         private System.Windows.Forms.Label label3;
     }

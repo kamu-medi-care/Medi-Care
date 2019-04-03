@@ -74,10 +74,10 @@ namespace Kamu_Medi_Care.Appointment
                 FName = txtFatherName.Text,
                 Temperature = txtTemperature.Text,
                 BloodPresure = txtBloodPresure.Text,
-                PrevDate = Convert.ToDateTime(txtPreVisit.Text),
+                PrevDate = txtPreVisit.Text,
                 Age = Convert.ToInt32(txtAge.Text),
                 Disease = txtDisease.Text,
-                NextDate = nextVistDateTimePicker.Value,
+                NextDate = nextVistDateTimePicker.Text,
             };
             appointment.SaveAppointment(appointmentModel);
         }

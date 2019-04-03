@@ -1,11 +1,9 @@
-﻿using System;
-
-namespace Kamu_Medi_Care.Models
+﻿namespace Kamu_Medi_Care.Models
 {
     public class ReceptionModel
     {
         public int Id { get; set; }
-        public DateTime DateTime { get; set; }
+        public string DateTime { get; set; }
         public string DrName { get; set; }
         public string PName { get; set; }
         public string FName { get; set; }

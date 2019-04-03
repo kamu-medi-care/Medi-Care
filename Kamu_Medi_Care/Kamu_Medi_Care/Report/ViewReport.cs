@@ -1,4 +1,5 @@
 ﻿using Kamu_Medi_Care.Templates;
+using Medi_Care.Models;
 
 namespace Kamu_Medi_Care.Report
 {
@@ -9,17 +10,23 @@ namespace Kamu_Medi_Care.Report
             InitializeComponent();
         }
 
-        private void btnSearch_Click(object sender, System.EventArgs e)
+        ReportService reportService=new ReportService();
+
+        private void BtnSearch_Click(object sender, System.EventArgs e)
         {
-            Report();
+            ReportModel report = new ReportModel
+            {
+                StartDate = dtpFrom.Text,
+                EndDate = dtpTo.Text
+            };
+
+            var data=reportService.GetReport(report);
+            dgvReport.DataSource = data;
         }
 
         private void Report()
         {
-            //Reception reception = new Reception
-            //{
-                
-            //};
+            
         }
     }
 }

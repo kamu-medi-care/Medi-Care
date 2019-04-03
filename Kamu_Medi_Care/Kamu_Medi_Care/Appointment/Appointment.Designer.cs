@@ -92,8 +92,9 @@
             // nextVistDateTimePicker
             // 
             this.nextVistDateTimePicker.CalendarForeColor = System.Drawing.Color.Fuchsia;
+            this.nextVistDateTimePicker.CustomFormat = "dd-MM-yyyy";
             this.nextVistDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextVistDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.nextVistDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.nextVistDateTimePicker.Location = new System.Drawing.Point(623, 231);
             this.nextVistDateTimePicker.Name = "nextVistDateTimePicker";
             this.nextVistDateTimePicker.Size = new System.Drawing.Size(239, 27);
@@ -102,6 +103,8 @@
             // txtDisease
             // 
             this.txtDisease.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDisease.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDisease.ForeColor = System.Drawing.Color.Fuchsia;
             this.txtDisease.Location = new System.Drawing.Point(171, 179);
             this.txtDisease.Name = "txtDisease";
             this.txtDisease.Size = new System.Drawing.Size(239, 76);
