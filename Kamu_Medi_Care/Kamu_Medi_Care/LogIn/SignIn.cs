@@ -34,7 +34,7 @@ namespace Kamu_Medi_Care.LogIn
                 Password = txtPassword.Text
             };
 
-            var exist=signInService.GetUser(signIn);
+            var exist = signInService.GetUser(signIn);
 
             if (exist)
             {
@@ -47,7 +47,7 @@ namespace Kamu_Medi_Care.LogIn
                 string title = "Success";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBoxIcon icon = MessageBoxIcon.Information;
-                
+
                 message.message(msge, title, buttons, icon);
             }
             else
@@ -56,8 +56,8 @@ namespace Kamu_Medi_Care.LogIn
                 string title = "Sign In Fail";
                 MessageBoxButtons buttons = MessageBoxButtons.RetryCancel;
                 MessageBoxIcon icon = MessageBoxIcon.Warning;
-                
-                message.message(msge,title,buttons,icon);
+
+                message.message(msge, title, buttons, icon);
                 RefreshForm();
             }
 

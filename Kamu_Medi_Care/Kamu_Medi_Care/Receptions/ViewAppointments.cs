@@ -11,7 +11,7 @@ namespace Kamu_Medi_Care.Appointment
             InitializeComponent();
         }
 
-        ReceptionService receptionService=new ReceptionService();
+        ReceptionService receptionService = new ReceptionService();
 
         private void ViewAppointments_Load(object sender, System.EventArgs e)
         {
@@ -20,7 +20,7 @@ namespace Kamu_Medi_Care.Appointment
 
         public void LoadReceptions()
         {
-            dgvReception.DataSource=receptionService.GetReception();
+            dgvReception.DataSource = receptionService.GetReception();
             dgvReception.MultiSelect = false;
             dgvReception.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvReception.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -29,7 +29,7 @@ namespace Kamu_Medi_Care.Appointment
         private void BtnSearch_Click(object sender, System.EventArgs e)
         {
             var name = txtName.Text;
-            var data=receptionService.GetPatientByName(name);
+            var data = receptionService.GetPatientByName(name);
             dgvReception.DataSource = data;
 
             if (string.IsNullOrEmpty(name))

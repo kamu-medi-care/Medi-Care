@@ -14,10 +14,10 @@ namespace Kamu_Medi_Care.Receptions
         {
             InitializeComponent();
 
-            SetIdAndTime();
+            SetId();
         }
 
-        ReceptionService receptionService=new ReceptionService();
+        ReceptionService receptionService = new ReceptionService();
 
         private void BtnAppointment_Click(object sender, System.EventArgs e)
         {
@@ -50,17 +50,17 @@ namespace Kamu_Medi_Care.Receptions
 
             receptionService.ReferPatient(reception);
             RefreshReception();
-            SetIdAndTime();
+            SetId();
         }
 
         public void RefreshReception()
         {
-            
-            cmbDrName.SelectedIndex=-1;
+
+            cmbDrName.SelectedIndex = -1;
             txtName.Clear();
             txtFatherName.Clear();
             txtAge.Clear();
-            cmbGender.SelectedIndex=-1;
+            cmbGender.SelectedIndex = -1;
             txtPhoneNo.Clear();
             txtAddress.Clear();
             txtFee.Clear();
@@ -89,13 +89,11 @@ namespace Kamu_Medi_Care.Receptions
 
         private Medi_Care.Service.Appointment appointment = new Medi_Care.Service.Appointment();
 
-        public void SetIdAndTime()
+        public void SetId()
         {
-            DtpDate.Text = DateTime.Now.Date.ToShortDateString();
 
             txtId.Text = appointment.ReceptionId().ToString();
 
-            
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)
@@ -107,7 +105,7 @@ namespace Kamu_Medi_Care.Receptions
 
         private void BtnReport_Click(object sender, EventArgs e)
         {
-            ViewReport viewReport=new ViewReport();
+            ViewReport viewReport = new ViewReport();
             viewReport.Show();
         }
     }
