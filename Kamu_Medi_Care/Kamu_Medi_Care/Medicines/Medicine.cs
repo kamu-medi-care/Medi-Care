@@ -1,6 +1,7 @@
 ﻿using Kamu_Medi_Care.Templates;
 using Medi_Care.Models;
 using Medi_Care.Service;
+using System;
 
 namespace Kamu_Medi_Care.Medicines
 {
@@ -15,18 +16,25 @@ namespace Kamu_Medi_Care.Medicines
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
-            var medicineModel = new MedicineModel
+            try
             {
 
-                MedicineName = txtMedicineName.Text
+                var medicineModel = new MedicineModel
+                {
 
-            };
+                    MedicineName = txtMedicineName.Text
 
-            medicineService.AddMedicine(medicineModel);
+                };
 
-            txtMedicineName.Clear();
-            LoadMedicine();
+                medicineService.AddMedicine(medicineModel);
 
+                txtMedicineName.Clear();
+                LoadMedicine();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
 
         private void Medicine_Load(object sender, System.EventArgs e)
@@ -36,8 +44,17 @@ namespace Kamu_Medi_Care.Medicines
 
         public void LoadMedicine()
         {
-            var data = medicineService.MedicineTable();
-            dgvMedicine.DataSource = data;
+            try
+            {
+
+                var data = medicineService.MedicineTable();
+                dgvMedicine.DataSource = data;
+
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
     }
 }

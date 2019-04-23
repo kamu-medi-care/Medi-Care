@@ -5,6 +5,7 @@ using Kamu_Medi_Care.Report;
 using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
 using System;
+using System.Windows.Forms;
 
 namespace Kamu_Medi_Care.Receptions
 {
@@ -33,22 +34,31 @@ namespace Kamu_Medi_Care.Receptions
 
         private void BtnRefer_Click(object sender, System.EventArgs e)
         {
-            var reception = new ReceptionModel()
+            try
             {
-                DateTime = DtpDate.Text,
-                DrName = cmbDrName.SelectedItem.ToString(),
-                PName = txtName.Text,
-                FName = txtFatherName.Text,
-                Age = Convert.ToInt32(txtAge.Text),
-                Gender = cmbGender.SelectedItem.ToString(),
-                PhoneNo = txtPhoneNo.Text,
-                Address = txtAddress.Text,
-                Fee = Convert.ToDouble(txtFee.Text),
-                Temperature = txtTemperature.Text,
-                BloodPresure = txtBloodPresure.Text,
-            };
 
-            receptionService.ReferPatient(reception);
+                var reception = new ReceptionModel()
+                {
+                    DateTime = DtpDate.Text,
+                    DrName = cmbDrName.SelectedItem.ToString(),
+                    PName = txtName.Text,
+                    FName = txtFatherName.Text,
+                    Age = Convert.ToInt32(txtAge.Text),
+                    Gender = cmbGender.SelectedItem.ToString(),
+                    PhoneNo = txtPhoneNo.Text,
+                    Address = txtAddress.Text,
+                    Fee = Convert.ToDouble(txtFee.Text),
+                    Temperature = txtTemperature.Text,
+                    BloodPresure = txtBloodPresure.Text,
+                };
+
+                receptionService.ReferPatient(reception);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please Enter Data in Correct Formate");
+            }
+
             RefreshReception();
             SetId();
         }
@@ -76,14 +86,22 @@ namespace Kamu_Medi_Care.Receptions
 
         public void SignedInUser(string Name)
         {
-            label.Text = Name.ToUpper();
-
-            if (Name == "reception")
+            try
             {
-                BtnAppointment.Enabled = false;
-                BtnMedicine.Enabled = false;
-                btnViewMedicine.Enabled = false;
-                BtnReport.Enabled = false;
+
+                label.Text = Name.ToUpper();
+
+                if (Name == "reception")
+                {
+                    BtnAppointment.Enabled = false;
+                    BtnMedicine.Enabled = false;
+                    btnViewMedicine.Enabled = false;
+                    BtnReport.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
         }
 
@@ -91,9 +109,15 @@ namespace Kamu_Medi_Care.Receptions
 
         public void SetId()
         {
+            try
+            {
 
-            txtId.Text = appointment.ReceptionId().ToString();
+                txtId.Text = appointment.ReceptionId().ToString();
+            }
+            catch (Exception ex)
+            {
 
+            }
         }
 
         private void BtnLogout_Click(object sender, EventArgs e)

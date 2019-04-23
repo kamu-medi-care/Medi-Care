@@ -1,5 +1,6 @@
 ﻿using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
+using System;
 using System.Windows.Forms;
 
 namespace Kamu_Medi_Care.Appointment
@@ -28,15 +29,23 @@ namespace Kamu_Medi_Care.Appointment
 
         private void BtnSearch_Click(object sender, System.EventArgs e)
         {
-            var name = txtName.Text;
-            var data = receptionService.GetPatientByName(name);
-            dgvReception.DataSource = data;
-
-            if (string.IsNullOrEmpty(name))
+            try
             {
-                var products = receptionService.GetReception();
-                dgvReception.DataSource = products;
+                var name = txtName.Text;
+                var data = receptionService.GetPatientByName(name);
+                dgvReception.DataSource = data;
+
+                if (string.IsNullOrEmpty(name))
+                {
+                    var products = receptionService.GetReception();
+                    dgvReception.DataSource = products;
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
         }
+
     }
 }

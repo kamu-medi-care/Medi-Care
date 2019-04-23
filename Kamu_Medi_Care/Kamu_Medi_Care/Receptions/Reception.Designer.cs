@@ -243,7 +243,7 @@
             this.txtBloodPresure.Location = new System.Drawing.Point(587, 269);
             this.txtBloodPresure.Name = "txtBloodPresure";
             this.txtBloodPresure.Size = new System.Drawing.Size(239, 27);
-            this.txtBloodPresure.TabIndex = 116;
+            this.txtBloodPresure.TabIndex = 10;
             // 
             // label10
             // 
@@ -274,7 +274,7 @@
             this.txtTemperature.Location = new System.Drawing.Point(166, 269);
             this.txtTemperature.Name = "txtTemperature";
             this.txtTemperature.Size = new System.Drawing.Size(239, 27);
-            this.txtTemperature.TabIndex = 115;
+            this.txtTemperature.TabIndex = 9;
             // 
             // cmbDrName
             // 
@@ -315,7 +315,7 @@
             this.BtnRefer.Location = new System.Drawing.Point(408, 325);
             this.BtnRefer.Name = "BtnRefer";
             this.BtnRefer.Size = new System.Drawing.Size(96, 36);
-            this.BtnRefer.TabIndex = 9;
+            this.BtnRefer.TabIndex = 11;
             this.BtnRefer.Text = "Refer";
             this.BtnRefer.UseVisualStyleBackColor = false;
             this.BtnRefer.Click += new System.EventHandler(this.BtnRefer_Click);

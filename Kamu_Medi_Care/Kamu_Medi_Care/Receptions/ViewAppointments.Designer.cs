@@ -41,7 +41,7 @@
             this.txtName.Location = new System.Drawing.Point(53, 44);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(232, 27);
-            this.txtName.TabIndex = 0;
+            this.txtName.TabIndex = 1;
             // 
             // BtnSearch
             // 
@@ -52,7 +52,7 @@
             this.BtnSearch.Location = new System.Drawing.Point(318, 42);
             this.BtnSearch.Name = "BtnSearch";
             this.BtnSearch.Size = new System.Drawing.Size(96, 36);
-            this.BtnSearch.TabIndex = 1;
+            this.BtnSearch.TabIndex = 2;
             this.BtnSearch.Text = "Search";
             this.BtnSearch.UseVisualStyleBackColor = false;
             this.BtnSearch.Click += new System.EventHandler(this.BtnSearch_Click);
