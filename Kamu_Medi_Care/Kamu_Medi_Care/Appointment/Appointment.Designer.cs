@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Appointment));
             this.panel1 = new System.Windows.Forms.Panel();
             this.nextVistDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.txtDisease = new System.Windows.Forms.RichTextBox();
@@ -53,6 +54,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LabelId = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.printPreviewDialog = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMedicine)).BeginInit();
             this.SuspendLayout();
@@ -358,6 +361,20 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "Patient No :";
             // 
+            // printPreviewDialog
+            // 
+            this.printPreviewDialog.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog.Enabled = true;
+            this.printPreviewDialog.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog.Icon")));
+            this.printPreviewDialog.Name = "printPreviewDialog";
+            this.printPreviewDialog.Visible = false;
+            // 
+            // printDocument
+            // 
+            this.printDocument.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument_PrintPage);
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,5 +422,7 @@
         private System.Windows.Forms.Label LabelId;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DateTimePicker nextVistDateTimePicker;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog;
+        private System.Drawing.Printing.PrintDocument printDocument;
     }
 }

@@ -10,17 +10,18 @@ namespace Kamu_Medi_Care.Medicines
         {
             InitializeComponent();
         }
-        
+
         MedicineService medicineService = new MedicineService();
 
         private void btnAdd_Click(object sender, System.EventArgs e)
         {
-            var medicineModel = new MedicineModel {
+            var medicineModel = new MedicineModel
+            {
 
                 MedicineName = txtMedicineName.Text
 
             };
-            
+
             medicineService.AddMedicine(medicineModel);
 
             txtMedicineName.Clear();
