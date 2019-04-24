@@ -54,7 +54,7 @@ namespace Kamu_Medi_Care.Receptions
 
                 receptionService.ReferPatient(reception);
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Please Enter Data in Correct Formate");
             }
@@ -99,7 +99,7 @@ namespace Kamu_Medi_Care.Receptions
                     BtnReport.Enabled = false;
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }
@@ -114,7 +114,7 @@ namespace Kamu_Medi_Care.Receptions
 
                 txtId.Text = appointment.ReceptionId().ToString();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

@@ -31,7 +31,7 @@ namespace Kamu_Medi_Care.Medicines
                 txtMedicineName.Clear();
                 LoadMedicine();
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }
@@ -51,7 +51,7 @@ namespace Kamu_Medi_Care.Medicines
                 dgvMedicine.DataSource = data;
 
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

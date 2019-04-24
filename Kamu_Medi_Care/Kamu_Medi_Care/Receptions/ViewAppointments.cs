@@ -1,6 +1,6 @@
 ﻿using Kamu_Medi_Care.Templates;
 using Medi_Care.Service;
-using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Kamu_Medi_Care.Appointment
@@ -16,35 +16,29 @@ namespace Kamu_Medi_Care.Appointment
 
         private void ViewAppointments_Load(object sender, System.EventArgs e)
         {
-            LoadReceptions();
-        }
-
-        public void LoadReceptions()
-        {
-            dgvReception.DataSource = receptionService.GetReception();
-            dgvReception.MultiSelect = false;
-            dgvReception.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvReception.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            string name = null;
+            LoadReceptions(name);
         }
 
         private void BtnSearch_Click(object sender, System.EventArgs e)
         {
-            try
+            var name = txtName.Text;
+            LoadReceptions(name);
+        }
+
+
+        public void LoadReceptions(string name)
+        {
+            var data = receptionService.GetReception();
+            dgvReception.DataSource = data;
+            if (!string.IsNullOrEmpty(name))
             {
-                var name = txtName.Text;
-                var data = receptionService.GetPatientByName(name);
+                data = data.Where(c => c.PName.ToLower().Contains(name.ToLower())).ToList();
                 dgvReception.DataSource = data;
-
-                if (string.IsNullOrEmpty(name))
-                {
-                    var products = receptionService.GetReception();
-                    dgvReception.DataSource = products;
-                }
             }
-            catch (Exception ex)
-            {
-
-            }
+            dgvReception.MultiSelect = false;
+            dgvReception.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvReception.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
     }

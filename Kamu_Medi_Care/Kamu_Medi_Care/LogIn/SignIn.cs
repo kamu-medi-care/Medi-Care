@@ -64,7 +64,7 @@ namespace Kamu_Medi_Care.LogIn
                     RefreshForm();
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
             }

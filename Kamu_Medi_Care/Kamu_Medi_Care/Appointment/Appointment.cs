@@ -39,7 +39,7 @@ namespace Kamu_Medi_Care.Appointment
                 dataTable.Columns.Add("In a Day", typeof(string));
 
                 DgvMedicine.DataSource = dataTable;
-            }catch(Exception ex)
+            }catch(Exception )
             {
 
             }
@@ -51,7 +51,7 @@ namespace Kamu_Medi_Care.Appointment
             {
                 var id = appointment.AppoitmentId();
                 LabelId.Text = id.ToString();
-            }catch(Exception ex)
+            }catch(Exception )
             {
 
             }
@@ -73,7 +73,7 @@ namespace Kamu_Medi_Care.Appointment
                 txtBloodPresure.Text = data.BloodPresure.ToString();
                 txtPreVisit.Text = data.DateTime.ToString();
                
-            }catch(Exception ex)
+            }catch(Exception )
             {
 
             }
@@ -106,7 +106,7 @@ namespace Kamu_Medi_Care.Appointment
                     NextDate = nextVistDateTimePicker.Text,
                 };
                 appointment.SaveAppointment(appointmentModel);
-            }catch(Exception ex)
+            }catch(Exception )
             {
 
             }
@@ -126,7 +126,7 @@ namespace Kamu_Medi_Care.Appointment
                     };
                     appointment.SaveMedicine(medicineModel);
                 }
-            }catch(Exception ex)
+            }catch(Exception)
             {
 
             }
@@ -163,7 +163,7 @@ namespace Kamu_Medi_Care.Appointment
         }
         Bitmap bmp;
 
-        public void printMedicine()
+        public void PrintMedicine()
         {
             int hieght = DgvMedicine.Height;
             DgvMedicine.Height = DgvMedicine.RowCount * DgvMedicine.RowTemplate.Height * 2;
@@ -200,9 +200,9 @@ namespace Kamu_Medi_Care.Appointment
                 e.Graphics.DrawString("Diseases", new Font("Arial", 13, FontStyle.Bold), Brushes.Black, new Point(25, 350));
                 e.Graphics.DrawString(" : " + txtDisease.Text, new Font("Arial", 13, FontStyle.Bold), Brushes.Black, new Point(150, 350));
 
-                printMedicine();
+                PrintMedicine();
                 e.Graphics.DrawImage(bmp, 25, 450);
-            }catch(Exception ex)
+            }catch(Exception )
             {
 
             }
