@@ -22,7 +22,9 @@ namespace Kamu_Medi_Care.Receptions
 
         private void BtnAppointment_Click(object sender, System.EventArgs e)
         {
+            var name = label.Text;
             Appointment.Appointment appointment = new Appointment.Appointment();
+            appointment.SignedInUser(name.ToLower());
             appointment.Show();
         }
 
@@ -39,6 +41,7 @@ namespace Kamu_Medi_Care.Receptions
 
                 var reception = new ReceptionModel()
                 {
+                    PatientId= Convert.ToInt32(textBoxId.Text),
                     DateTime = DtpDate.Text,
                     DrName = cmbDrName.SelectedItem.ToString(),
                     PName = txtName.Text,
@@ -88,7 +91,6 @@ namespace Kamu_Medi_Care.Receptions
         {
             try
             {
-
                 label.Text = Name.ToUpper();
 
                 if (Name == "reception")
@@ -112,7 +114,8 @@ namespace Kamu_Medi_Care.Receptions
             try
             {
 
-                txtId.Text = appointment.ReceptionId().ToString();
+                //txtId.Text = appointment.ReceptionId().ToString();
+                textBoxId.Text = appointment.GetPatientId().ToString();
             }
             catch (Exception )
             {

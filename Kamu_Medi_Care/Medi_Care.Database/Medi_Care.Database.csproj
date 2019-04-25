@@ -93,6 +93,22 @@
     <Compile Include="Migrations\201904031235481_ApplyAnnotation.Designer.cs">
       <DependentUpon>201904031235481_ApplyAnnotation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904250538115_ApplyAnnotationOnReception.cs" />
+    <Compile Include="Migrations\201904250538115_ApplyAnnotationOnReception.Designer.cs">
+      <DependentUpon>201904250538115_ApplyAnnotationOnReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904250548186_AddPatientIdInReception.cs" />
+    <Compile Include="Migrations\201904250548186_AddPatientIdInReception.Designer.cs">
+      <DependentUpon>201904250548186_AddPatientIdInReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904250602257_AddPatientIdInAppointment.cs" />
+    <Compile Include="Migrations\201904250602257_AddPatientIdInAppointment.Designer.cs">
+      <DependentUpon>201904250602257_AddPatientIdInAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904250617587_ApplyAnnotationOnMedicine.cs" />
+    <Compile Include="Migrations\201904250617587_ApplyAnnotationOnMedicine.Designer.cs">
+      <DependentUpon>201904250617587_ApplyAnnotationOnMedicine.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -139,6 +155,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904031235481_ApplyAnnotation.resx">
       <DependentUpon>201904031235481_ApplyAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904250538115_ApplyAnnotationOnReception.resx">
+      <DependentUpon>201904250538115_ApplyAnnotationOnReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904250548186_AddPatientIdInReception.resx">
+      <DependentUpon>201904250548186_AddPatientIdInReception.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904250602257_AddPatientIdInAppointment.resx">
+      <DependentUpon>201904250602257_AddPatientIdInAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904250617587_ApplyAnnotationOnMedicine.resx">
+      <DependentUpon>201904250617587_ApplyAnnotationOnMedicine.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

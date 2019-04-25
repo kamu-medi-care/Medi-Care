@@ -1,5 +1,6 @@
 ﻿using Kamu_Medi_Care.Templates;
 using Medi_Care.Models;
+using Message;
 using System;
 using System.Data;
 using System.Drawing;
@@ -11,15 +12,18 @@ namespace Kamu_Medi_Care.Appointment
     {
         public Appointment()
         {
-            InitializeComponent();
-            
-            
+            InitializeComponent();            
+        }
+
+        AlertMessage message = new AlertMessage();
+
+        public void SignedInUser(string name)
+        {
+            DrNameLabel.Text = name.ToUpper();
         }
 
         private Medi_Care.Service.Appointment appointment = new Medi_Care.Service.Appointment();
         DataTable dataTable = new DataTable();
-
-
 
         private void Appointment_Load(object sender, System.EventArgs e)
         {
@@ -49,8 +53,19 @@ namespace Kamu_Medi_Care.Appointment
         {
             try
             {
-                var id = appointment.AppoitmentId();
-                LabelId.Text = id.ToString();
+                //var id = appointment.AppoitmentId();
+               // TextBoxId.Text = id.ToString();
+                //Is Check out ???
+                var startId = Convert.ToInt32(LabelId.Text);
+                var response = appointment.IsCheckOut(startId);
+                for (int i = 1; response != false; i++)
+                {
+                    startId = startId + 1;
+                    response = appointment.IsCheckOut(startId);
+                }
+
+                TextBoxId.Text = startId.ToString();
+
             }catch(Exception )
             {
 
@@ -62,9 +77,33 @@ namespace Kamu_Medi_Care.Appointment
         {
             try
             {
+                var id = Convert.ToInt32(TextBoxId.Text);
+                var name = DrNameLabel.Text;
 
-                var id = LabelId.Text;
-                var data = appointment.ReceptionId(Convert.ToInt32(id));
+                var data = appointment.ReceptionId(id,name);
+                for (int i = 1; data==null; i++)
+                {
+                    if (i < 100)
+                    {
+                        id = id + 1;
+                        data = appointment.ReceptionId(id, name);
+                    }
+                    else
+                    {
+                        string msge = "No more patient exist";
+                        string title = "Warning";
+                        MessageBoxButtons buttons = MessageBoxButtons.OK;
+                        MessageBoxIcon icon = MessageBoxIcon.Warning;
+
+                        message.message(msge, title, buttons, icon);
+                        //Appointment appointment = new Appointment();
+                        this.Hide();
+                        break;
+                    }
+                    
+                }
+                
+                TextBoxId.Text = data.PatientId.ToString();
                 txtName.Text = data.PName.ToString();
                 txtFatherName.Text = data.FName.ToString();
                 txtAge.Text = data.Age.ToString();
@@ -96,6 +135,7 @@ namespace Kamu_Medi_Care.Appointment
             {
                 AppointmentModel appointmentModel = new AppointmentModel
                 {
+                    PatientId = Convert.ToInt32(TextBoxId.Text),
                     Name = txtName.Text,
                     FName = txtFatherName.Text,
                     Temperature = txtTemperature.Text,
@@ -120,7 +160,7 @@ namespace Kamu_Medi_Care.Appointment
                 {
                     AppointMedicineModel medicineModel = new AppointMedicineModel
                     {
-                        PatientId = LabelId.Text,
+                        PatientId = Convert.ToInt32(TextBoxId.Text),
                         Name = DgvMedicine.Rows[i].Cells[0].Value.ToString(),
                         InaDay = DgvMedicine.Rows[i].Cells[1].Value.ToString(),
                     };
@@ -178,7 +218,7 @@ namespace Kamu_Medi_Care.Appointment
             {
                 
                 e.Graphics.DrawString("Medical Clinic", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, new Point(350, 25));
-                e.Graphics.DrawString(LabelId.Text, new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(25, 50));
+                e.Graphics.DrawString(TextBoxId.Text, new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(25, 50));
                 e.Graphics.DrawString(DateTime.Now.ToString(), new Font("Arial", 14, FontStyle.Bold), Brushes.Black, new Point(750, 50));
 
                 e.Graphics.DrawString("Patient Name", new Font("Arial", 13, FontStyle.Bold), Brushes.Black, new Point(25, 150));

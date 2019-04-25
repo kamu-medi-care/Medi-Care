@@ -3,6 +3,7 @@
     public class ReceptionModel
     {
         public int Id { get; set; }
+        public int PatientId { get; set; }
         public string DateTime { get; set; }
         public string DrName { get; set; }
         public string PName { get; set; }

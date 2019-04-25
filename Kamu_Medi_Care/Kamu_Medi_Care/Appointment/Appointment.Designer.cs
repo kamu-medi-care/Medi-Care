@@ -57,6 +57,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtGender = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DrNameLabel = new System.Windows.Forms.Label();
+            this.TextBoxId = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvMedicine)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +86,7 @@
             this.LabelId.Size = new System.Drawing.Size(20, 22);
             this.LabelId.TabIndex = 6;
             this.LabelId.Text = "1";
+            this.LabelId.Visible = false;
             // 
             // label8
             // 
@@ -384,6 +387,29 @@
             this.panel1.Size = new System.Drawing.Size(937, 477);
             this.panel1.TabIndex = 4;
             // 
+            // DrNameLabel
+            // 
+            this.DrNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.DrNameLabel.AutoSize = true;
+            this.DrNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrNameLabel.ForeColor = System.Drawing.Color.White;
+            this.DrNameLabel.Location = new System.Drawing.Point(40, 29);
+            this.DrNameLabel.Name = "DrNameLabel";
+            this.DrNameLabel.Size = new System.Drawing.Size(0, 22);
+            this.DrNameLabel.TabIndex = 5;
+            // 
+            // TextBoxId
+            // 
+            this.TextBoxId.Enabled = false;
+            this.TextBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxId.ForeColor = System.Drawing.Color.Magenta;
+            this.TextBoxId.Location = new System.Drawing.Point(924, 30);
+            this.TextBoxId.Name = "TextBoxId";
+            this.TextBoxId.Size = new System.Drawing.Size(53, 27);
+            this.TextBoxId.TabIndex = 2;
+            this.TextBoxId.Text = "0";
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,7 +418,9 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.LabelId);
+            this.Controls.Add(this.DrNameLabel);
             this.Controls.Add(this.label8);
+            this.Controls.Add(this.TextBoxId);
             this.Name = "Appointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment";
@@ -434,5 +462,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtGender;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label DrNameLabel;
+        private System.Windows.Forms.TextBox TextBoxId;
     }
 }

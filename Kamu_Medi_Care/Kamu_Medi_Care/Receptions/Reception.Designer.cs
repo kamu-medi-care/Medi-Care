@@ -28,18 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.BtnViewReception = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnAppointment = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnMedicine = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnViewMedicine = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnReport = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.BtnLogout = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DtpDate = new System.Windows.Forms.DateTimePicker();
             this.txtBloodPresure = new System.Windows.Forms.TextBox();
@@ -64,133 +52,24 @@
             this.label9 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
-            this.toolStrip1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.BtnViewReception = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnAppointment = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnMedicine = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnViewMedicine = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnReport = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.BtnLogout = new System.Windows.Forms.ToolStripButton();
+            this.textBoxId = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.BackColor = System.Drawing.Color.White;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.BtnViewReception,
-            this.toolStripSeparator1,
-            this.BtnAppointment,
-            this.toolStripSeparator5,
-            this.BtnMedicine,
-            this.toolStripSeparator2,
-            this.btnViewMedicine,
-            this.toolStripSeparator3,
-            this.BtnReport,
-            this.toolStripSeparator4,
-            this.BtnLogout});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(969, 44);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // BtnViewReception
-            // 
-            this.BtnViewReception.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnViewReception.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnViewReception.Image = global::Kamu_Medi_Care.Properties.Resources.online_support_512;
-            this.BtnViewReception.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnViewReception.Name = "BtnViewReception";
-            this.BtnViewReception.Size = new System.Drawing.Size(121, 41);
-            this.BtnViewReception.Text = "View Reception";
-            this.BtnViewReception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnViewReception.Click += new System.EventHandler(this.BtnViewReception_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 44);
-            // 
-            // BtnAppointment
-            // 
-            this.BtnAppointment.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnAppointment.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnAppointment.Image = global::Kamu_Medi_Care.Properties.Resources.contract_icon_26;
-            this.BtnAppointment.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnAppointment.Name = "BtnAppointment";
-            this.BtnAppointment.Size = new System.Drawing.Size(112, 41);
-            this.BtnAppointment.Text = "Appointments";
-            this.BtnAppointment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnAppointment.Click += new System.EventHandler(this.BtnAppointment_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 44);
-            // 
-            // BtnMedicine
-            // 
-            this.BtnMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnMedicine.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.png_drugs_drugs_medication_pills_treatment_icon_512;
-            this.BtnMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnMedicine.Name = "BtnMedicine";
-            this.BtnMedicine.Size = new System.Drawing.Size(84, 41);
-            this.BtnMedicine.Text = "Medicines";
-            this.BtnMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnMedicine.Click += new System.EventHandler(this.BtnMedicine_Click);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
-            // 
-            // btnViewMedicine
-            // 
-            this.btnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnViewMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.medicine;
-            this.btnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnViewMedicine.Name = "btnViewMedicine";
-            this.btnViewMedicine.Size = new System.Drawing.Size(115, 41);
-            this.btnViewMedicine.Text = "View Medicine";
-            this.btnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
-            // 
-            // BtnReport
-            // 
-            this.BtnReport.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnReport.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnReport.Image = global::Kamu_Medi_Care.Properties.Resources.record;
-            this.BtnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnReport.Name = "BtnReport";
-            this.BtnReport.Size = new System.Drawing.Size(61, 41);
-            this.BtnReport.Text = "Report";
-            this.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.ForeColor = System.Drawing.Color.Fuchsia;
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 44);
-            // 
-            // BtnLogout
-            // 
-            this.BtnLogout.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.BtnLogout.ForeColor = System.Drawing.Color.Fuchsia;
-            this.BtnLogout.Image = global::Kamu_Medi_Care.Properties.Resources.logout_1466292_1241152;
-            this.BtnLogout.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.BtnLogout.Name = "BtnLogout";
-            this.BtnLogout.Size = new System.Drawing.Size(63, 41);
-            this.BtnLogout.Text = "Logout";
-            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
             // 
             // panel1
             // 
@@ -284,8 +163,8 @@
             this.cmbDrName.ForeColor = System.Drawing.Color.Magenta;
             this.cmbDrName.FormattingEnabled = true;
             this.cmbDrName.Items.AddRange(new object[] {
-            "Dr Male",
-            "Dr Female"});
+            "DrMale",
+            "DrFemale"});
             this.cmbDrName.Location = new System.Drawing.Point(166, 31);
             this.cmbDrName.Name = "cmbDrName";
             this.cmbDrName.Size = new System.Drawing.Size(239, 28);
@@ -474,6 +353,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "P_Name";
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label.ForeColor = System.Drawing.Color.White;
+            this.label.Location = new System.Drawing.Point(782, 60);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(0, 26);
+            this.label.TabIndex = 0;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -485,15 +374,138 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Reception";
             // 
-            // label
+            // toolStrip1
             // 
-            this.label.AutoSize = true;
-            this.label.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label.ForeColor = System.Drawing.Color.White;
-            this.label.Location = new System.Drawing.Point(782, 60);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(0, 26);
-            this.label.TabIndex = 0;
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BtnViewReception,
+            this.toolStripSeparator1,
+            this.BtnAppointment,
+            this.toolStripSeparator5,
+            this.BtnMedicine,
+            this.toolStripSeparator2,
+            this.btnViewMedicine,
+            this.toolStripSeparator3,
+            this.BtnReport,
+            this.toolStripSeparator4,
+            this.BtnLogout});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(969, 44);
+            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // BtnViewReception
+            // 
+            this.BtnViewReception.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnViewReception.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnViewReception.Image = global::Kamu_Medi_Care.Properties.Resources.online_support_512;
+            this.BtnViewReception.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnViewReception.Name = "BtnViewReception";
+            this.BtnViewReception.Size = new System.Drawing.Size(121, 41);
+            this.BtnViewReception.Text = "View Reception";
+            this.BtnViewReception.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnViewReception.Click += new System.EventHandler(this.BtnViewReception_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.ForeColor = System.Drawing.Color.Fuchsia;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 44);
+            // 
+            // BtnAppointment
+            // 
+            this.BtnAppointment.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnAppointment.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnAppointment.Image = global::Kamu_Medi_Care.Properties.Resources.contract_icon_26;
+            this.BtnAppointment.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnAppointment.Name = "BtnAppointment";
+            this.BtnAppointment.Size = new System.Drawing.Size(112, 41);
+            this.BtnAppointment.Text = "Appointments";
+            this.BtnAppointment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnAppointment.Click += new System.EventHandler(this.BtnAppointment_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.ForeColor = System.Drawing.Color.Fuchsia;
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 44);
+            // 
+            // BtnMedicine
+            // 
+            this.BtnMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnMedicine.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.png_drugs_drugs_medication_pills_treatment_icon_512;
+            this.BtnMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnMedicine.Name = "BtnMedicine";
+            this.BtnMedicine.Size = new System.Drawing.Size(84, 41);
+            this.BtnMedicine.Text = "Medicines";
+            this.BtnMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnMedicine.Click += new System.EventHandler(this.BtnMedicine_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.ForeColor = System.Drawing.Color.Fuchsia;
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
+            // 
+            // btnViewMedicine
+            // 
+            this.btnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnViewMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.medicine;
+            this.btnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnViewMedicine.Name = "btnViewMedicine";
+            this.btnViewMedicine.Size = new System.Drawing.Size(115, 41);
+            this.btnViewMedicine.Text = "View Medicine";
+            this.btnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.ForeColor = System.Drawing.Color.Fuchsia;
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 44);
+            // 
+            // BtnReport
+            // 
+            this.BtnReport.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnReport.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnReport.Image = global::Kamu_Medi_Care.Properties.Resources.record;
+            this.BtnReport.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnReport.Name = "BtnReport";
+            this.BtnReport.Size = new System.Drawing.Size(61, 41);
+            this.BtnReport.Text = "Report";
+            this.BtnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.ForeColor = System.Drawing.Color.Fuchsia;
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 44);
+            // 
+            // BtnLogout
+            // 
+            this.BtnLogout.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnLogout.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnLogout.Image = global::Kamu_Medi_Care.Properties.Resources.logout_1466292_1241152;
+            this.BtnLogout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnLogout.Name = "BtnLogout";
+            this.BtnLogout.Size = new System.Drawing.Size(63, 41);
+            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnLogout.Click += new System.EventHandler(this.BtnLogout_Click);
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxId.ForeColor = System.Drawing.Color.Magenta;
+            this.textBoxId.Location = new System.Drawing.Point(46, 61);
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.ReadOnly = true;
+            this.textBoxId.Size = new System.Drawing.Size(86, 27);
+            this.textBoxId.TabIndex = 112;
+            this.textBoxId.Text = "0";
             // 
             // Reception
             // 
@@ -504,13 +516,14 @@
             this.Controls.Add(this.label);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.textBoxId);
             this.Name = "Reception";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reception";
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -556,5 +569,6 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.ToolStripButton BtnLogout;
         private System.Windows.Forms.DateTimePicker DtpDate;
+        private System.Windows.Forms.TextBox textBoxId;
     }
 }

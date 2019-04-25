@@ -3,6 +3,7 @@
     public class AppointmentModel
     {
         public int Id { get; set; }
+        public int PatientId { get; set; }
         public string Name { get; set; }
         public string FName { get; set; }
         public string Temperature { get; set; }

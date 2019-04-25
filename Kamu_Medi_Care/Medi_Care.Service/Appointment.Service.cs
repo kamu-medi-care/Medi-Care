@@ -17,35 +17,45 @@ namespace Medi_Care.Service
             }
         }
 
-
-
         public int AppoitmentId()
         {
             using (var context = new MCContext())
             {
-                int maxId = context.AppointmentModels.Select(p => p.Id).DefaultIfEmpty(0).Max();
+                int maxId = context.AppointmentModels.Select(p => p.PatientId)
+                    .DefaultIfEmpty(0).Max();
 
                 return maxId + 1;
             }
         }
 
-        public int ReceptionId()
+        public bool IsCheckOut(int id)
         {
             using (var context = new MCContext())
             {
-                int maxId = context.ReceptionModels.Select(p => p.Id).DefaultIfEmpty(0).Max();
-
-                return maxId + 1;
+                var receptionId = context.AppointmentModels
+                    .Where(c => c.PatientId == id).Any();
+                return receptionId;
             }
         }
-        public ReceptionModel ReceptionId(int id)
+
+        public ReceptionModel ReceptionId(int id, string name)
         {
             using (var context = new MCContext())
             {
-                var receptionModel = context.ReceptionModels.Where(s => s.Id == id).SingleOrDefault();
+                var receptionModel = context.ReceptionModels.Where(s => s.PatientId == id && s.DrName.ToLower()==name.ToLower()).SingleOrDefault();
 
                 //int receptId = receptionModel.Id;
                 return receptionModel;
+            }
+        }
+        
+        public int GetPatientId()
+        {
+            using (var context = new MCContext())
+            {
+                int maxId = context.ReceptionModels.Select(p => p.PatientId).DefaultIfEmpty(0).Max();
+
+                return maxId + 1;
             }
         }
 
