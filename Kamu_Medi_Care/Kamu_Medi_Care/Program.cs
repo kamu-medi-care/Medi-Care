@@ -1,4 +1,6 @@
 ﻿using Kamu_Medi_Care.LogIn;
+using Kamu_Medi_Care.Medicines;
+using Kamu_Medi_Care.Receptions;
 using System;
 using System.Windows.Forms;
 

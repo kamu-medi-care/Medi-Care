@@ -65,6 +65,12 @@
     <Compile Include="LogIn\SignIn.Designer.cs">
       <DependentUpon>SignIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medicines\MediStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicines\MediStore.Designer.cs">
+      <DependentUpon>MediStore.cs</DependentUpon>
+    </Compile>
     <Compile Include="Receptions\ViewAppointments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn\SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicines\MediStore.resx">
+      <DependentUpon>MediStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Receptions\ViewAppointments.resx">
       <DependentUpon>ViewAppointments.cs</DependentUpon>

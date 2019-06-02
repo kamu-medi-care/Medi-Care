@@ -109,6 +109,18 @@
     <Compile Include="Migrations\201904250617587_ApplyAnnotationOnMedicine.Designer.cs">
       <DependentUpon>201904250617587_ApplyAnnotationOnMedicine.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201905291735257_AddFieldsInMedicine.cs" />
+    <Compile Include="Migrations\201905291735257_AddFieldsInMedicine.Designer.cs">
+      <DependentUpon>201905291735257_AddFieldsInMedicine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906020332009_AddBills.cs" />
+    <Compile Include="Migrations\201906020332009_AddBills.Designer.cs">
+      <DependentUpon>201906020332009_AddBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906020404492_AddBillIdOnBills.cs" />
+    <Compile Include="Migrations\201906020404492_AddBillIdOnBills.Designer.cs">
+      <DependentUpon>201906020404492_AddBillIdOnBills.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -167,6 +179,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904250617587_ApplyAnnotationOnMedicine.resx">
       <DependentUpon>201904250617587_ApplyAnnotationOnMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905291735257_AddFieldsInMedicine.resx">
+      <DependentUpon>201905291735257_AddFieldsInMedicine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906020332009_AddBills.resx">
+      <DependentUpon>201906020332009_AddBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906020404492_AddBillIdOnBills.resx">
+      <DependentUpon>201906020404492_AddBillIdOnBills.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

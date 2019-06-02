@@ -61,7 +61,7 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnMedicine = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnViewMedicine = new System.Windows.Forms.ToolStripButton();
+            this.BtnViewMedicine = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.BtnReport = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -384,7 +384,7 @@
             this.toolStripSeparator5,
             this.BtnMedicine,
             this.toolStripSeparator2,
-            this.btnViewMedicine,
+            this.BtnViewMedicine,
             this.toolStripSeparator3,
             this.BtnReport,
             this.toolStripSeparator4,
@@ -449,16 +449,17 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 44);
             // 
-            // btnViewMedicine
+            // BtnViewMedicine
             // 
-            this.btnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnViewMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.medicine;
-            this.btnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnViewMedicine.Name = "btnViewMedicine";
-            this.btnViewMedicine.Size = new System.Drawing.Size(115, 41);
-            this.btnViewMedicine.Text = "View Medicine";
-            this.btnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnViewMedicine.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.BtnViewMedicine.ForeColor = System.Drawing.Color.Fuchsia;
+            this.BtnViewMedicine.Image = global::Kamu_Medi_Care.Properties.Resources.medicine;
+            this.BtnViewMedicine.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BtnViewMedicine.Name = "BtnViewMedicine";
+            this.BtnViewMedicine.Size = new System.Drawing.Size(93, 41);
+            this.BtnViewMedicine.Text = "Medi_Store";
+            this.BtnViewMedicine.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.BtnViewMedicine.Click += new System.EventHandler(this.BtnViewMedicine_Click);
             // 
             // toolStripSeparator3
             // 
@@ -540,7 +541,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton BtnReport;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton btnViewMedicine;
+        private System.Windows.Forms.ToolStripButton BtnViewMedicine;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;

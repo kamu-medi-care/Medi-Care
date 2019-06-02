@@ -15,5 +15,6 @@ namespace Medi_Care.Database
         public DbSet<AppointMedicineModel> AppointMedicineModels { get; set; }
         public DbSet<MedicineModel> MedicineModels { get; set; }
         public DbSet<SignIn> SignIns { get; set; }
+        public DbSet<BillModel> BillModels { get; set; }
     }
 }

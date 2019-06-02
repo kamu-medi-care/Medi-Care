@@ -97,7 +97,7 @@ namespace Kamu_Medi_Care.Receptions
                 {
                     BtnAppointment.Enabled = false;
                     BtnMedicine.Enabled = false;
-                    btnViewMedicine.Enabled = false;
+                    BtnViewMedicine.Enabled = false;
                     BtnReport.Enabled = false;
                 }
             }
@@ -134,6 +134,12 @@ namespace Kamu_Medi_Care.Receptions
         {
             ViewReport viewReport = new ViewReport();
             viewReport.Show();
+        }
+
+        private void BtnViewMedicine_Click(object sender, EventArgs e)
+        {
+            MediStore mediStore = new MediStore();
+            mediStore.Show();
         }
     }
 }
